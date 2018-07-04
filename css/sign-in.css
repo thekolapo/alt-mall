@@ -1,0 +1,475 @@
+@font-face {
+    font-family: 'IBMPlexSans';
+    font-weight: normal;
+    src: url('/fonts/IBMPlexSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'IBMPlexSans';
+    font-weight: Bold;
+    src: url('/fonts/IBMPlexSans-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'IBMPlexSans';
+    font-weight: lighter;
+    src: url('/fonts/IBMPlexSans-Light.ttf');
+}
+
+@font-face {
+    font-family: 'IBMPlexSans';
+    font-weight: medium;
+    src: url('/fonts/IBMPlexSans-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'IBMPlexSans';
+    font-weight: 500;
+    src: url('/fonts/IBMPlexSans-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'Circular-Book';
+    src: url('/fonts/Circular/CircularStd-Book.ttf');
+}
+
+@font-face {
+    font-family: 'SourceSansPro-SemiBold';
+    src: url('/fonts/SourceSansPro-SemiBold.ttf');
+}
+
+
+body{
+    font-family: 'IBMPlexSans';
+    font-weight: medium;
+    background: rgba(128, 128, 128, 0.2);
+}
+
+#section-sign-in{
+    display: none;
+}
+
+.display-block{
+    display: block;
+}
+
+.big-text{
+    font-family: 'Circular-Book';
+    font-size: 36px;
+    text-align: center;
+    color: black;
+    margin-top: 60px;
+}
+
+.sign-in-box{
+    width: 40%;
+    margin-left: 30%;
+    height: 850px;
+    background: white;
+    margin-top: 30px;
+    margin-bottom: 80px;
+    /* box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
+
+.sign-up-box{
+    height: 1200px;
+    display: block;
+
+}
+
+.height-850{
+    height: 850px;
+}
+
+.box-nav{
+    text-align: center;
+    width: 100%;
+    height: 73px;
+    font-size: 18px;
+    /* background: black; */
+    font-weight: 500;
+}
+
+
+.box-nav .left-nav-item{
+    color: black;
+    /* background: black; */
+    width: 50%;
+    float: left;
+    height: 100%;
+    border-bottom: 0.8px solid rgba(0, 0, 0, 0.267);
+    text-transform: uppercase;
+    padding-top: 25px;
+}
+
+.box-nav .right-nav-item{
+    color: white;
+    background: black;
+    width: 50%;
+    float: right;
+    height: 100%;
+    text-transform: uppercase;
+    padding-top: 25px;
+}
+
+/* .background-black{
+    background: black;
+    color: white;
+}
+
+.background-white{
+    background-color: rgba(255, 255, 255, 0);
+} */
+
+.txt-sign-in-with-email{
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.81;
+    text-transform: uppercase;
+    margin-top: 41px;
+    font-weight: medium;
+    text-align: center;
+}
+
+.text-box-group{
+    height: 54px;
+    width: 50%;
+    margin-left: 25%;
+    /* background: black; */
+    margin-top: 20px;
+    margin-bottom: 25px;
+    color:black;
+}
+
+.text-box-group-sign-up{
+    margin-left: 2%;
+    width: 48%;
+}
+
+.more-width{
+    float: right;
+    width: 60%;
+    margin-right: 10px;
+    /* background: #000000; */
+}
+
+.less-width{
+    margin-left: 30px;
+    float: left;
+    width: 30%;
+}
+
+.text-box-group .label{
+    color: black;
+    text-align: left;
+    padding-left: 0px;
+    font-size: 14px;
+    font-weight: lighter;
+    color: #000000;
+}
+
+.text-box-group .text-box{
+    margin-top: 4px;
+    height: 36px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    border: solid 1px #ababab;
+}
+
+.text-precaution{
+    font-weight: lighter;
+    font-size: 14px;
+    color: #474646be;
+    line-height: 1.5;
+    /* background: #000000; */
+    /* text-align: center; */
+    margin-top: 30px;
+    /* margin-left: 125px; */
+}
+
+.checkbox-group{
+    height: 53px;
+    width: 45%;
+    margin-left: 27.5%;
+    background-color: #d8d8d8;
+    margin-top: 17px;
+    line-height: 1.5;
+    color: #474646;
+    font-size: 14px;
+    font-weight: lighter;
+    padding-top: 15px;
+}
+
+.checkbox-group span{
+    margin-left: 12px;
+}
+
+input{
+    width: 15px;
+    height: 15px;
+}
+
+.sign-in-button{
+    height: 39px;
+    width: 45%;
+    margin-left: 27.5%;
+    background: black;
+    color: white;
+    margin-top: 25px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 9px;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.text-create-account{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+.color-blue{
+   color: #6ba3f1;
+   cursor:pointer;
+}
+
+.line-text-group{
+    margin-top: 7px;
+}
+
+.line-text-group .line{
+    height: 1px;
+    background: rgba(0, 0, 0, 0.247);
+    margin-top: 12px;
+}
+
+.line-text-group .text{
+    text-align: center;
+    font-weight: medium;
+    font-size: 16px;
+
+}
+
+.text-sign-in-with{
+    font-size: 16px;
+    line-height: 1.81;
+    letter-spacing: normal;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: medium;
+    margin-top: 12px;
+}
+
+.button-group{
+    margin-top: 22px;
+}
+
+.button-group .button{
+    height: 41.6px;
+    border-radius: 6.4px;
+    padding-top: 12px;
+    cursor: pointer;
+    font-size: 13px;
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.background-blue{
+    background-color: #507cc0;
+}
+
+.background-red{
+    background-color: #df4930;
+}
+
+.background-light-blue{
+    background-color: #64ccf1;
+}
+
+.long-text-social-sign-in{
+    width: 98%;
+    font-size: 15px;
+    font-weight: lighter;
+    line-height: 1.5;
+    text-align: center;
+    color: #47464696;
+    margin-top: 19px;
+}
+
+.img-facebook, .img-twitter, .img-google{
+    float: left;
+    height: 50%;
+    background-image: url("/img/facebook-letter-logo.png");
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.img-twitter{
+    padding-top: 16px;
+    background-image: url("/img/twitter-logo-silhouette\ \(1\).png");
+}
+
+.img-google{
+    background-image: url("/img/google-glass-logo.png");
+}
+
+.button-text{
+    position: absolute;
+    font-family: 'SourceSansPro-SemiBold';
+    padding-left: 25px;
+}
+
+.top-margin-40{
+    margin-top: 40px;
+}
+
+@media screen and (max-width: 1550px){
+
+    .sign-in-box{
+        width: 55%;
+        margin-left: 22.5%;
+    }
+
+}
+
+@media screen and (max-width: 1400px){
+
+    .sign-in-box{
+        width: 60%;
+        margin-left: 20%;
+    }
+
+
+}
+
+@media screen and (max-width: 1200px){
+
+    .sign-in-box{
+        height: 900px;
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .sign-up-box{
+        height: 1150px;
+        display: block;
+    
+    }
+
+    .more-width{
+        float: right;
+        width: 60%;
+        margin-right: 60px;
+        /* background: #000000; */
+    }
+    
+    .less-width{
+        margin-left: 20px;
+        float: left;
+        width: 20%;
+    }
+
+}
+
+@media screen and (max-width: 812px){
+   
+   
+}
+  
+@media screen and (max-width: 768px){
+    .sign-in-box{
+        width: 90%;
+        height: 1000px;
+        margin-left: 5%;
+    }
+
+    .button-text{
+        position: absolute;
+        padding-left: 100px;
+        font-family: 'SourceSansPro-SemiBold';
+    }
+
+    .sign-up-box{
+        height: 1300px;
+    
+    }
+
+}
+  
+@media screen and (max-width: 640px){
+    .sign-in-box{
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    .sign-up-box{
+        height: 1750px;
+    
+    }
+
+    .text-box-group{
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .checkbox-group{
+        width: 78%;
+        margin-left: 11%;
+    }
+
+    .sign-in-button{
+        width: 78%;
+        margin-left: 11%;
+    }
+
+    .box-nav{
+       font-size: 14px;
+    }
+
+    .button-text{
+        position: absolute;
+        padding-left: 70px;
+        font-family: 'SourceSansPro-SemiBold';
+    }
+
+}
+  
+@media screen and (max-width: 480px){
+
+
+}
+  
+@media screen and (max-width: 360px){
+
+}
+
+@media screen and (max-width : 320px){
+
+
+}
+
+/* 1440 goes here */
+
+@media screen and (min-width : 1920px){
+  
+
+}
+
+@media only screen and (device-width : 1024px) and (device-height : 1366px) {
+ 
+}
+
+@media only screen and (device-width : 1024px) and (device-height : 768px) {
+
+}
+
+@media only screen and (device-width : 1024px) and (device-height : 768px) {
+    
+}
+ 

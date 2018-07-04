@@ -1,0 +1,237 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <title>Alt Mall</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css">  
+  <!-- Custom Fonts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+  <div id="overlay"></div>
+  <div id="landing" class="wrapper">
+    <div class="left-column">
+      <div class="left-column-top">
+          <div class="left-column-header ">SAFER.</div>
+          <div class="left-column-small-text col-sm-12">shop now pay later</div>
+          <div class="col-xs-7 col-sm-6 divider"></div>
+          <div class="left-column-small-text small-margin col-xs-12 col-sm-9">We offer you business as Amazon (/ˈæməˌzɒn/), is an American electronic commerce and cloud computing. has separate retail websites for the United States, the United Kingdom and Ireland, France, Canada, Germany, Italy, Spain, Netherlands, Australia, Brazil, Japan, China, India</div>
+      </div>
+      <div class="left-column-bottom zoom-small"></div>
+    </div>
+    <div class="right-column zoom-big hidden-md hidden-xs hidden-sm"></div>    
+    <div id ="arrow" onclick="GotoMainSection()"></div>
+  </div>
+
+  <div id="main-section">
+      <div id="mySidenav" class="sidenav hidden-md hidden-lg">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="#">Home & Office</a>
+          <a href="#">Fashion</a>
+          <a href="#">Gadgets & Computing</a>
+          <a href="#">Electronics</a>
+          <a href="#">Baby & Child</a>
+          <a href="#">Beauty & Healthcare</a>
+          <a href="#">Gaming</a>
+          <a href="#">Groceries</a>
+          <a href="#">Books</a>
+      </div>
+    
+      <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 big-divider"></div>
+        </div>
+        <div class="row nav">
+          <div class="nav-top-test">
+            <div class="col-lg-10 col-lg-offset-1">
+              <div class="col-xs-2 col-sm-1 menu-bar hidden-md hidden-lg" onclick="openNav()">
+                <div id="bar1"></div>
+                <div id="bar2"></div>
+                <div id="bar3"></div>
+              </div>
+              <div class="col-sm-1 col-xs-2 nav-top-text-test">SAFER.</div>
+              <div class="col-sm-1 hidden-sm hidden-xs nav-top-text-test small-font">Products</div>
+              <div class="col-sm-1 hidden-sm  hidden-xs nav-top-text-test small-font">Vendors</div>
+              <div class="col-sm-6 col-sm-offset-1 col-md-7 col-md-offset-0  hidden-xs">
+                  <input type="text" placeholder="Search for items, brands and inspiration" class="search-bar">
+              </div>
+              <div class="col-sm-3 col-md-2 col-xs-5 col-xs-offset-3 col-sm-offset-0">
+                <div class="col-xs-4 col-sm-4 hidden-lg hidden-md hidden-sm ic-search"></div>
+                <div class="col-xs-4 col-sm-4 ic-cart"></div>
+                <div class="col-xs-4 col-sm-4 ic-profile"></div>
+              </div>
+            </div>
+          </div>
+    
+    
+          <div class="nav-bottom hidden-xs hidden-sm">
+              <div class="wrapper-nav-bottom-text">
+                  <span class="nav-bottom-text" onclick="gotoProductListPage()">Home & Office</span>
+                  <span class="nav-bottom-text" onclick="gotoProductListPage()">Fashion</span>
+                  <span class="nav-bottom-text" onclick="gotoProductListPage()">Gadgets & Computing</span>
+                  <span class="nav-bottom-text" onclick="gotoProductListPage()">Electronics</span>
+                  <span class="nav-bottom-text" onclick="gotoProductListPage()">Baby & Child</span>
+                  <span class="nav-bottom-text" onclick="gotoProductListPage()">Beauty & Healthcare</span>
+                  <span class="nav-bottom-text">Gaming</span>
+                  <span class="nav-bottom-text">Groceries</span>
+                  <span class="nav-bottom-text">Books</span>
+              </div>
+          </div>
+        </div>
+        <div class="row section-2">
+          <div class="col-md-8 col-md-offset-2">
+            <div class="col-lg-6 sample-product bottom-margin" onclick="gotoProductsPage()">
+              <div class="sample-product-img"></div><br>
+              <div class="sample-product-text">Ez Wash <br><br>Shop Electronics</div>
+            </div>
+            <div class="col-lg-6 sample-product "onclick="gotoProductsPage()">
+                <div class="sample-product-img"></div>
+                <div class="sample-product-text"><br>
+                  <div class="col-xs-12">Caffeine Haven</div><br><br> 
+                  Shop Kitchen&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Quick View
+                  <!-- <div class="col-xs-6">Quick View</div> -->
+                  <!-- <div class="col-xs-6">Shop Kitchen</div> -->
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="row deals-section">
+          <div class="col-sm-12 section-title">Today's Deals</div>
+          <div class="col-sm-8 col-sm-offset-2">
+            <div class="col-lg-3 col-md-6">
+              <div class="deal-item zoom" onclick="gotoProductsPage()">
+                  <div class="deal-item-img"></div>
+                  <div class="col-xs-12 deal-item-price">$4000.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strike>$6000.00</strike></div>
+                  <div class="col-xs-12 deal-item-end-date">Ends in 1:00:00</div>
+              </div>  
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="deal-item zoom" onclick="gotoProductsPage()">
+                    <div class="deal-item-img"></div>
+                    <div class="col-xs-12 deal-item-price">$4000.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strike>$6000.00</strike></div>
+                    <div class="col-xs-12 deal-item-end-date">Ends in 1:00:00</div>
+                </div>  
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="deal-item zoom" onclick="gotoProductsPage()">
+                    <div class="deal-item-img"></div>
+                    <div class="col-xs-12 deal-item-price">$4000.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strike>$6000.00</strike></div>
+                    <div class="col-xs-12 deal-item-end-date">Ends in 1:00:00</div>
+                </div>  
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="deal-item zoom">
+                    <div class="deal-item-img"></div>
+                    <div class="col-xs-12 deal-item-price">$4000.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strike>$6000.00</strike></div>
+                    <div class="col-xs-12 deal-item-end-date">Ends in 1:00:00</div>
+                </div>  
+            </div>
+            <div class="col-sm-4 col-sm-offset-4">
+              <div class="btn-shop-all" onclick="">Shop all deals</div>
+            </div>
+          </div>
+        </div>
+        <div class="row section-4">
+          <div class="col-sm-8 col-sm-offset-2">
+            <div class="apple"></div>
+          </div>
+        </div>
+        <div class="row section-5">
+          <div class="col-sm-12 section-title">Recommended</div>
+          <div class="col-sm-10 col-sm-offset-1">
+            <div class="col-lg-2 col-xs-6">
+              <div class="rec-product zoom">
+                <div class="rec-product-img"></div>
+                <div class="rec-product-text">$157.99</div>
+              </div>
+            </div>
+            <div class="col-lg-2 col-xs-6 zoom">
+                <div class="rec-product">
+                  <div class="rec-product-img"></div>
+                  <div class="rec-product-text">$157.99</div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-xs-6 zoom">
+                <div class="rec-product">
+                  <div class="rec-product-img"></div>
+                  <div class="rec-product-text">$157.99</div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-xs-6 zoom">
+                <div class="rec-product">
+                  <div class="rec-product-img"></div>
+                  <div class="rec-product-text">$157.99</div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-xs-6 zoom">
+                <div class="rec-product">
+                  <div class="rec-product-img"></div>
+                  <div class="rec-product-text">$157.99</div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-xs-6 zoom">
+                <div class="rec-product">
+                  <div class="rec-product-img"></div>
+                  <div class="rec-product-text">$157.99</div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="row section-6">
+          <div class="col-sm-8 col-sm-offset-2">
+            <div class="col-sm-5">
+              <div class="shop-deals"></div>
+            </div>
+            <div class="col-sm-2 hidden-xs">
+              <div class="vert-divider"></div>
+            </div>
+            <div class="col-sm-5 hidden-xs">
+              <div class="shop-deals"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 footer">
+                <div class="col-sm-10 col-sm-offset-1">
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-3 footer-text-group">
+                            <div class="col-sm-12 footer-text">COMPANY</div>
+                            <div class="col-sm-12 footer-text">About us</div>
+                            <div class="col-sm-12 footer-text">Careers</div>
+                            <div class="col-sm-12 footer-text">Blog</div>
+                            <div class="col-sm-12 footer-text">Contact Us</div>
+                        </div>
+                        <div class="col-xs-6 col-sm-3 footer-text-group">
+                            <div class="col-sm-12 footer-text">COMPANY</div>
+                            <div class="col-sm-12 footer-text">About us</div>
+                            <div class="col-sm-12 footer-text">Careers</div>
+                            <div class="col-sm-12 footer-text">Blog</div>
+                            <div class="col-sm-12 footer-text">Contact Us</div>
+                        </div>
+                        <div class="col-xs-6 col-sm-3 footer-text-group">
+                            <div class="col-sm-12 footer-text">COMPANY</div>
+                            <div class="col-sm-12 footer-text">About us</div>
+                            <div class="col-sm-12 footer-text">Careers</div>
+                            <div class="col-sm-12 footer-text">Blog</div>
+                            <div class="col-sm-12 footer-text">Contact Us</div>
+                        </div>
+                        <div class="col-xs-6 col-sm-3 footer-text-group">
+                            <div class="col-sm-12 footer-text">COMPANY</div>
+                            <div class="col-sm-12 footer-text">About us</div>
+                            <div class="col-sm-12 footer-text">Careers</div>
+                            <div class="col-sm-12 footer-text">Blog</div>
+                            <div class="col-sm-12 footer-text">Contact Us</div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+          </div>
+        
+      </div>
+  </div>
+  
+  <script src="js/main.js"></script>
+</body>
+</html>
