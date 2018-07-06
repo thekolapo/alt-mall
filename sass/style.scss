@@ -68,6 +68,10 @@ body{
     /* overflow: hidden; */
 }
 
+button:focus{
+    outline: none;
+}
+
 #arrow{
     position: absolute;
     float: right;
@@ -176,7 +180,9 @@ body{
     height: 20px;
     width: 100%;
     background-color: #d0dcd2;
-    background-color: black;
+    background: white;
+    border: solid 1px #979797;
+    // background-color: black;
     padding-left: 0;
 }
 
