@@ -49,15 +49,14 @@ body {
 button:focus {
   outline: none; }
 
-#arrow {
+.abs {
   position: absolute;
-  float: right;
+  width: 5%;
+  height: 100%; }
+
+#arrow {
   width: 30px;
   height: 38px;
-  background-image: url("/img/arrow.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   margin-left: 60px;
   margin-top: 800px;
   -webkit-animation: bounce 2s infinite 2s;
@@ -67,7 +66,7 @@ button:focus {
   cursor: pointer; }
 
 #landing {
-  /* display: none; */ }
+  display: none; }
 
 #overlay {
   position: absolute;
@@ -98,11 +97,7 @@ button:focus {
   float: right;
   width: 50%;
   height: 100%;
-  background: whitesmoke;
-  background-image: url("/img/cam.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat; }
+  object-fit: cover; }
 
 .left-column-top {
   background: #740909;
@@ -114,11 +109,7 @@ button:focus {
 .left-column-bottom {
   height: 50%;
   width: 100%;
-  background: whitesmoke;
-  background-image: url("/img/apple-products.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  object-fit: cover;
   z-index: -70; }
 
 .left-column-header {
@@ -183,21 +174,16 @@ button:focus {
 
 .ic-cart {
   height: 25px;
-  background-image: url("/img/cart.png");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
   cursor: pointer;
-  margin-top: 10px; }
+  margin-top: 10px;
+  object-fit: contain; }
 
 .ic-profile {
   height: 25px;
-  background-image: url("/img/avatar.png");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
   cursor: pointer;
-  margin-top: 10px; }
+  margin-top: 10px;
+  object-fit: contain;
+  object-position: center; }
 
 .ic-search {
   height: 25px;
@@ -238,11 +224,10 @@ button:focus {
 
 .sample-product-img {
   height: 90%;
-  background-image: url("/img/cam.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  cursor: pointer; }
+  width: 100%;
+  cursor: pointer;
+  object-fit: cover;
+  object-position: center; }
 
 .sample-product-text {
   text-align: center;
@@ -274,11 +259,9 @@ button:focus {
   cursor: pointer; }
 
 .deal-item-img {
+  width: 100%;
   height: 70%;
-  background-image: url("/img/cam.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat; }
+  object-fit: cover; }
 
 .deal-item-price {
   margin-top: 20px; }
@@ -296,7 +279,8 @@ button:focus {
   cursor: pointer;
   /* margin-top: 30px; */
   margin-bottom: 30px;
-  padding-top: 15px; }
+  padding-top: 2px;
+  border: none; }
 
 .section-4, .section-5 {
   margin-top: 100px;
@@ -308,10 +292,7 @@ button:focus {
 .apple {
   width: 100%;
   height: 600px;
-  background-image: url("/img/apple-products.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  object-fit: cover;
   cursor: pointer; }
 
 .rec-product {
@@ -320,11 +301,9 @@ button:focus {
   margin-bottom: 60px; }
 
 .rec-product-img {
+  width: 100%;
   height: 83%;
-  background-image: url("/img/airpods.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  object-fit: cover;
   cursor: pointer; }
 
 .rec-product-text {
@@ -338,12 +317,10 @@ button:focus {
   margin-bottom: 100px; }
 
 .shop-deals {
+  width: 100%;
   height: 200px;
   background-color: grey;
-  background-image: url("/img/cam.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  object-fit: cover;
   cursor: pointer; }
 
 .vert-divider {
@@ -527,9 +504,6 @@ button:focus {
   font-size: 36px;
   margin-left: 50px; }
 
-#main-section {
-  display: none; }
-
 .nav-limited-offer {
   height: 43px;
   background-color: #18a95e;
@@ -635,10 +609,7 @@ button:focus {
 .product-image {
   height: 346px;
   width: 100%;
-  background-image: url("/img/apple-products.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat; }
+  object-fit: cover; }
 
 .product-desc, .product-price, .product-rating {
   margin-top: 12px; }
@@ -678,7 +649,7 @@ button:focus {
   text-transform: uppercase;
   font-size: 14px;
   margin-bottom: 50px;
-  padding-top: 13px;
+  padding-top: 5px;
   text-align: center;
   cursor: pointer;
   /* width: 256px; */ }

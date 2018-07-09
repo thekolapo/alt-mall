@@ -72,15 +72,21 @@ button:focus{
     outline: none;
 }
 
-#arrow{
+.abs{
     position: absolute;
-    float: right;
+    width: 5%;
+    height: 100%;
+}
+
+#arrow{
+    // position: absolute;
+    // float: left;
     width: 30px;
     height: 38px;
-    background-image: url("/img/arrow.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    // background-image: url("/img/arrow.png");
+    // background-size: cover;
+    // background-position: center;
+    // background-repeat: no-repeat;
     margin-left: 60px;
     margin-top: 800px;
     -webkit-animation: bounce 2s infinite 2s;
@@ -91,7 +97,7 @@ button:focus{
 }
 
 #landing{
-    /* display: none; */
+    display: none;
 }
 
 #overlay{
@@ -126,11 +132,12 @@ button:focus{
     float: right;
     width: 50%;
     height: 100%;
-    background: whitesmoke;
-    background-image: url("/img/cam.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    // background: whitesmoke;
+    object-fit: cover;
+    // background-image: url("/img/cam.jpg");
+    // background-size: cover;
+    // background-position: center;
+    // background-repeat: no-repeat;
 }
 
 .left-column-top{
@@ -144,11 +151,12 @@ button:focus{
 .left-column-bottom{
     height: 50%;
     width: 100%;
-    background: whitesmoke;
-    background-image: url("/img/apple-products.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    object-fit: cover;
+    // background: whitesmoke;
+    // background-image: url("/img/apple-products.jpg");
+    // background-size: cover;
+    // background-position: center;
+    // background-repeat: no-repeat;
     z-index: -70;
 }
 
@@ -228,22 +236,25 @@ button:focus{
 
 .ic-cart{
     height: 25px;
-    background-image: url("/img/cart.png");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
+    // background-image: url("/img/cart.png");
+    // background-size: contain;
+    // background-position: center;
+    // background-repeat: no-repeat;
     cursor: pointer;
     margin-top: 10px;
+    object-fit: contain;
 }
 
 .ic-profile{
     height: 25px;
-    background-image: url("/img/avatar.png");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
+    // background-image: url("/img/avatar.png");
+    // background-size: contain;
+    // background-position: center;
+    // background-repeat: no-repeat;
     cursor: pointer;
     margin-top: 10px;
+    object-fit: contain;
+    object-position: center;
 }
 
 .ic-search{
@@ -292,11 +303,14 @@ button:focus{
 
 .sample-product-img{
     height: 90%;
-    background-image: url("/img/cam.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    width: 100%;
+    // background-image: url("/img/cam.jpg");
+    // background-size: cover;
+    // background-position: center;
+    // background-repeat: no-repeat;
     cursor: pointer;
+    object-fit: cover;
+    object-position: center;
 }
 
 .sample-product-text{
@@ -335,11 +349,13 @@ button:focus{
 
 
 .deal-item-img{
+    width: 100%;
     height: 70%;
-    background-image: url("/img/cam.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    object-fit: cover;
+    // background-image: url("/img/cam.jpg");
+    // background-size: cover;
+    // background-position: center;
+    // background-repeat: no-repeat;
 }
 
 .deal-item-price{
@@ -360,7 +376,8 @@ button:focus{
     cursor: pointer;
     /* margin-top: 30px; */
     margin-bottom: 30px;
-    padding-top: 15px;
+    padding-top: 2px;
+    border: none;
 }
 
 .section-4, .section-5{
@@ -376,10 +393,11 @@ button:focus{
 .apple{
     width: 100%;
     height: 600px;
-    background-image: url("/img/apple-products.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    // background-image: url("/img/apple-products.jpg");
+    // background-size: cover;
+    // background-position: center;
+    // background-repeat: no-repeat;
+    object-fit: cover;
     cursor: pointer;
 }
 
@@ -390,11 +408,13 @@ button:focus{
 }
 
 .rec-product-img{
+    width: 100%;
     height: 83%;
-    background-image: url("/img/airpods.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    // background-image: url("/img/airpods.jpg");
+    // background-size: cover;
+    // background-position: center;
+    // background-repeat: no-repeat;
+    object-fit: cover;
     cursor: pointer;
 }
 
@@ -411,12 +431,14 @@ button:focus{
 }
 
 .shop-deals{
+    width: 100%;
     height: 200px;
     background-color: grey;
-    background-image: url("/img/cam.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    // background-image: url("/img/cam.jpg");
+    // background-size: cover;
+    // background-position: center;
+    // background-repeat: no-repeat;
+    object-fit: cover;
     cursor: pointer;
 }
 
@@ -646,7 +668,7 @@ button:focus{
 }
 
 #main-section{
-    display: none;
+    // display: none;
 }
 
 .nav-limited-offer{
@@ -768,10 +790,11 @@ button:focus{
 .product-image{
     height: 346px;
     width: 100%;
-    background-image: url("/img/apple-products.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    // background-image: url("/img/apple-products.jpg");
+    // background-size: cover;
+    // background-position: center;
+    // background-repeat: no-repeat;
+    object-fit: cover
 }
 
 .product-desc, .product-price, .product-rating{
@@ -818,7 +841,7 @@ button:focus{
     text-transform: uppercase;
     font-size: 14px;
     margin-bottom: 50px;
-    padding-top: 13px;
+    padding-top: 5px;
     text-align: center;
     cursor: pointer;
     /* width: 256px; */
