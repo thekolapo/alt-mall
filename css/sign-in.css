@@ -99,7 +99,9 @@ body{
     height: 100%;
     border-bottom: 0.8px solid rgba(0, 0, 0, 0.267);
     text-transform: uppercase;
-    padding-top: 25px;
+    /* padding-top: 25px; */
+    border-right: none;
+    border-left: none;
 }
 
 .box-nav .right-nav-item{
@@ -109,7 +111,7 @@ body{
     float: right;
     height: 100%;
     text-transform: uppercase;
-    padding-top: 25px;
+    /* padding-top: 25px; */
 }
 
 /* .background-black{
