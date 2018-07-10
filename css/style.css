@@ -69,9 +69,6 @@ button:focus {
   transition: all .2s ease-in;
   cursor: pointer; }
 
-#landing {
-  display: none; }
-
 #overlay {
   position: absolute;
   height: 0%;
@@ -540,6 +537,9 @@ button:focus {
   right: 25px;
   font-size: 36px;
   margin-left: 50px; }
+
+#main-section {
+  display: none; }
 
 .nav-limited-offer {
   height: 43px;
