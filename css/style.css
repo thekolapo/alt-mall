@@ -49,6 +49,10 @@ body {
 button:focus {
   outline: none; }
 
+.btn-transparent {
+  background: transparent;
+  border: none; }
+
 .abs {
   position: absolute;
   width: 5%;
@@ -140,18 +144,38 @@ button:focus {
   padding-left: 0; }
 
 .nav {
-  color: white; }
+  color: white;
+  width: 100%;
+  z-index: 300;
+  position: fixed; }
+  .nav .nav-button {
+    height: 50px;
+    background-color: #7a888a;
+    padding-top: 0px;
+    padding-left: 15px;
+    border: none; }
+  .nav .background-none {
+    background: transparent; }
 
 .ttomnav-top {
   height: 50px;
   background-color: #0c3b14; }
 
-.nav-bottom {
+.nav-bottom-products {
   height: 50px;
   background-color: #7a888a;
-  background-color: #808080;
   font-size: 14px;
   padding-top: 12px; }
+
+.nav-bottom-search {
+  background: black;
+  height: 55px; }
+
+.nav-bottom-vendors {
+  padding-top: 22px;
+  height: 110px;
+  background-color: #7a888a;
+  display: none; }
 
 .nav-top-left {
   /* background-color: rebeccapurple; */ }
@@ -172,18 +196,12 @@ button:focus {
 .bottom-margin {
   margin-bottom: 80px; }
 
-.ic-cart {
-  height: 25px;
-  cursor: pointer;
-  margin-top: 10px;
-  object-fit: contain; }
-
-.ic-profile {
+.nav-icon {
   height: 25px;
   cursor: pointer;
   margin-top: 10px;
   object-fit: contain;
-  object-position: center; }
+  margin-right: 15px; }
 
 .ic-search {
   height: 25px;
@@ -208,6 +226,16 @@ button:focus {
   text-align: left;
   /* background: red; */ }
 
+.wrapper-vendor-logos {
+  width: 70%;
+  margin-left: 15%; }
+  .wrapper-vendor-logos .vendor-logo {
+    height: 65px;
+    width: 130px;
+    object-fit: cover;
+    margin-right: 30px;
+    cursor: pointer; }
+
 .wrapper-nav-bottom-text {
   width: 70%;
   margin-left: 15%; }
@@ -225,22 +253,21 @@ button:focus {
 .sample-product-img {
   height: 90%;
   width: 100%;
-  cursor: pointer;
   object-fit: cover;
   object-position: center; }
 
 .sample-product-text {
   text-align: center;
-  font-size: 19px;
-  cursor: pointer; }
+  font-size: 19px; }
 
-.section-2, .deals-section {
-  margin-top: 120px; }
+.section-2 {
+  margin-top: 250px; }
 
 .deals-section {
   /* height: 536px; */
   background-color: #bdbdbd;
-  font-family: 'IBMPlexSans'; }
+  font-family: 'IBMPlexSans';
+  margin-top: 120px; }
 
 .section-title {
   font-family: 'IBMPlexSans';
@@ -349,7 +376,6 @@ button:focus {
 .small-font {
   /* display: none; */
   font-size: 15px;
-  padding-top: 12px;
   /* text-align: right; */
   /* padding-right: 0px; */
   /* background: red; */ }
@@ -410,7 +436,7 @@ button:focus {
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 1;
+  z-index: 500;
   top: 0;
   left: 0;
   background-color: #111;
@@ -423,7 +449,7 @@ button:focus {
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 1;
+  z-index: 500;
   top: 0;
   right: 0;
   background-color: #111;
@@ -432,6 +458,12 @@ button:focus {
   transition: 0.5s;
   padding-top: 60px;
   background-color: #fafafa; }
+  #cart-slide .products-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 75%;
+    overflow: auto;
+    margin-top: 35px; }
   #cart-slide .text-cart {
     color: #36434b;
     font-size: 20px;
@@ -441,11 +473,9 @@ button:focus {
     padding-top: 10px;
     padding-left: 25px; }
     #cart-slide .cart-item .item-image {
-      height: 90%;
-      background-image: url("/img/cam.jpg");
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat; }
+      width: 100%;
+      height: 125px;
+      object-fit: cover; }
     #cart-slide .cart-item .item-name {
       font-size: 16px;
       font-weight: lighter;
@@ -455,14 +485,21 @@ button:focus {
       margin-top: 10px;
       color: #999999; }
     #cart-slide .cart-item .btn-remove {
+      background: transparent;
+      border: none;
       text-decoration: underline;
-      cursor: pointer; }
+      cursor: pointer;
+      text-align: left;
+      padding-left: 0px; }
   #cart-slide .cart-footer {
     position: absolute;
-    bottom: 2%;
+    bottom: 0%;
     text-align: center;
     width: 100%;
-    font-size: 14px; }
+    font-size: 14px;
+    background-color: #fafafa;
+    padding-bottom: 25px;
+    padding-top: 25px; }
     #cart-slide .cart-footer .total-cost {
       font-size: 16px;
       margin-bottom: 18px; }
@@ -516,7 +553,8 @@ button:focus {
   color: #7e7d7d;
   height: 45px;
   /* background: #0c3b14; */
-  padding-top: 14px; }
+  padding-top: 14px;
+  margin-top: 220px; }
 
 .product-search-string {
   height: 70px;
@@ -578,10 +616,11 @@ button:focus {
   border-radius: 80px;
   font-size: 16px;
   text-align: center;
-  padding-top: 3px;
+  padding-top: 0px;
   margin-right: 15px;
   margin-top: 20px;
-  cursor: pointer; }
+  cursor: pointer;
+  background: transparent; }
 
 .items-found-count-text {
   color: #777676;
@@ -674,11 +713,20 @@ button:focus {
     /* font-size: 28px; */
     width: 75%;
     margin-left: 10%; } }
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1480px) {
   .wrapper-nav-bottom-text {
     /* font-size: 28px; */
     width: 80%;
-    margin-left: 8%; } }
+    margin-left: 8%; }
+
+  .wrapper-vendor-logos {
+    width: 80%;
+    margin-left: 10%; }
+    .wrapper-vendor-logos .vendor-logo {
+      height: 65px;
+      width: 130px;
+      object-fit: cover;
+      margin-right: 20px; } }
 @media screen and (max-width: 1350px) {
   .wrapper-nav-bottom-text {
     /* font-size: 28px; */
@@ -692,13 +740,34 @@ button:focus {
     font-size: 12.4px; }
 
   .left-column {
-    width: 100%; } }
+    width: 100%; }
+
+  .wrapper-vendor-logos {
+    width: 90%;
+    margin-left: 5%; }
+    .wrapper-vendor-logos .vendor-logo {
+      height: 65px;
+      width: 130px;
+      object-fit: cover;
+      margin-right: 16px; } }
+@media screen and (max-width: 760px) {
+  .nav-icons {
+    padding-left: 30%; } }
+@media screen and (max-width: 600px) {
+  .nav-icons {
+    padding-left: 17%; } }
 @media screen and (max-width: 480px) {
   .product-filter-dropdown {
-    width: 155px; } }
+    width: 155px; }
+
+  #cart-slide .products-wrapper {
+    height: 55%; } }
 @media screen and (max-width: 375px) {
   .product-filter-dropdown {
-    width: 140px; } }
+    width: 140px; }
+
+  .nav-icon {
+    margin-right: 7px; } }
 @media screen and (max-height: 450px) {
   .sidenav {
     padding-top: 15px; }

@@ -87,7 +87,7 @@ body{
 }
 
 .shipping-payment-bar{
-    padding-top: 50px;
+    padding-top: 255px;
     font-size: 17px;
     height: 100px;
     // margin-top: 500px;
@@ -115,7 +115,7 @@ body{
 }
 
 .confirm-order-group{
-    margin-top: 40px;
+    margin-top: 100px;
     font-size: 25px;
     font-weight: lighter;
 }
@@ -149,9 +149,10 @@ body{
         margin-top: 16px;
         color: white;
         text-align: center;
-        padding-top: 6px;
+        padding-top: 0px;
         font-size: 14px;
         text-transform: uppercase;
+        border: none;
     }
 }
 
@@ -269,15 +270,16 @@ body{
         height: 45px;
         background-color: #36434b;
         color: white;
-        padding-top: 10px;
+        padding-top: 0px;
         font-size: 14px;
         font-weight: 500;
+        border: none;
     }
 
 }
 
 .section-checkout-address{
-    padding-top: 50px;
+    padding-top: 260px;
     
     .shipping-payment-bar{
         padding-top: 0px;
