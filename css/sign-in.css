@@ -72,7 +72,7 @@ body{
 }
 
 .sign-up-box{
-    height: 1200px;
+    height: 900px;
     display: block;
 
 }
@@ -92,7 +92,7 @@ body{
 
 
 .box-nav .left-nav-item{
-    color: black;
+    /* color: black; */
     /* background: black; */
     width: 50%;
     float: left;
@@ -105,23 +105,25 @@ body{
 }
 
 .box-nav .right-nav-item{
-    color: white;
-    background: black;
+    /* color: white; */
     width: 50%;
     float: right;
     height: 100%;
     text-transform: uppercase;
+    /* border:none; */
     /* padding-top: 25px; */
 }
 
-/* .background-black{
+.background-black{
     background: black;
     color: white;
 }
 
 .background-white{
-    background-color: rgba(255, 255, 255, 0);
-} */
+    background: transparent;
+    color: black;
+    
+}
 
 .txt-sign-in-with-email{
     text-align: center;
@@ -221,7 +223,7 @@ input{
     border-radius: 5px;
     text-transform: uppercase;
     text-align: center;
-    padding-top: 9px;
+    padding-top: 0px;
     font-weight: 500;
     cursor: pointer;
     box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -237,6 +239,8 @@ input{
 .color-blue{
    color: #6ba3f1;
    cursor:pointer;
+   background: transparent;
+   border: none;
 }
 
 .line-text-group{
