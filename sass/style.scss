@@ -28,7 +28,19 @@
 
 @font-face {
     font-family: 'IBMPlexSans';
+    font-weight: 100;
+    src: url('/fonts/IBMPlexSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'IBMPlexSans';
     font-weight: Bold;
+    src: url('/fonts/IBMPlexSans-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'IBMPlexSans';
+    font-weight: 600;
     src: url('/fonts/IBMPlexSans-Bold.ttf');
 }
 
@@ -41,6 +53,12 @@
 @font-face {
     font-family: 'IBMPlexSans';
     font-weight: medium;
+    src: url('/fonts/IBMPlexSans-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'IBMPlexSans';
+    font-weight: 200;
     src: url('/fonts/IBMPlexSans-Medium.ttf');
 }
 
@@ -81,6 +99,179 @@ button:focus{
     position: absolute;
     width: 5%;
     height: 100%;
+}
+
+#review-specification-section{
+
+    #customer-reviews{
+        
+    }
+
+    #product-specification{
+        display: none;
+        color: #4a4a4af5;
+        padding-bottom: 800px;
+
+        .spec{
+            margin-top: 50px;
+            font-size: 14px;
+
+            .divider{
+                margin-top: 12px;
+            }
+
+            .bold-text{
+                font-weight: 500;
+            }
+        }
+    }
+
+    .nav-buttons{
+        text-align: center;
+        margin-top: 159px;
+        text-transform: uppercase;
+        font-size: 14px;
+    
+        .btn-tab{
+            background: transparent;
+            border: none;
+            text-transform: uppercase;
+            margin-right: 60px;
+            font-weight: 600;
+    
+            #line-1, #line-2{
+                width: 100%;
+                height: 2px;
+                margin-top: 10px;
+                background: #36434b;
+                display: none;
+            }
+    
+            #line-2{
+               display: block;
+            }
+        }
+    
+    }
+
+    .row-ratings{
+        margin-top: 82px;
+
+        .text-overall-rating{
+            text-align: center;
+            .bold-text{
+                font-size: 60px;
+                font-weight: 500;
+            }
+    
+            .font-size-17{
+                font-size: 17px;
+            }
+
+            .font-size-14{
+                font-size: 14px;
+            }
+        }
+
+        .stars-and-bar-rating{
+            padding-top: 10px;
+
+            .grey-bar{
+               margin-top: 7px;
+                height: 5px;
+                background: rgba(128, 128, 128, 0.651);
+                border-radius: 5px;
+
+                .orange-bar{
+                    background: #ff9500;
+                    border-radius: 5px;
+                    height: 5px;
+                    width: 75%;
+                    z-index: 7;
+                }
+
+                .width-50{
+                    width: 50%;
+                }
+
+                .width-25{
+                    width: 25%;
+                }
+
+                .width-10{
+                    width: 10%;
+                }
+
+                .width-0{
+                    width: 0%;
+                }
+            }
+
+            .margin-top-4{
+                margin-top: 4px;
+            }
+
+        }
+
+        .write-review-section{
+            padding-top: 30px;
+            text-align: center;
+
+            .btn-review{
+                margin-top: 35px;
+                height: 36px;
+                border: none;
+                background-color: #36434b;
+                color: white;
+                text-transform: uppercase;
+                font-size: 12px;
+            }
+        }
+
+    }
+
+    .review-notes{
+        margin-top: 100px;
+
+        .customer-note{
+            margin-bottom: 55px;
+
+            .customer-name{
+                font-weight: 200;
+                font-size: 14px;
+                color: #4a4a4a;
+                text-align: left;
+                padding-left: 0px;
+            }
+
+            .ratings{
+                margin-top: 30px;
+                font-size: 14px;
+
+                .short-text{
+                    margin-left: 15px;
+                    color: rgba(0, 0, 0, 0.596);
+                }
+            }
+
+            .date{
+                text-align: left;
+                padding-left: 0px;
+                color: gray;
+                margin-top: 12px;
+                margin-bottom: 20px;
+            }
+
+            .long-review-text{
+                font-weight: 100;
+                text-align: left;
+                padding-left: 0px;
+                letter-spacing: 0.6px;
+                color: #4a4a4ad0;
+            }
+        }
+    }
+
 }
 
 #arrow{
@@ -1013,6 +1204,17 @@ button:focus{
        padding-left: 17%;
     }
 
+    #review-specification-section{
+        .nav-buttons{
+            font-size: 12px;
+
+            .btn-tab{
+                margin-right: 2px;
+            }
+        }
+
+    }
+
 }
 
 @media screen and (max-width: 480px){
@@ -1023,6 +1225,15 @@ button:focus{
     #cart-slide{    
         .products-wrapper{
             height: 55%;
+        }
+    }
+
+    #review-specification-section{
+    
+        #product-specification{
+            display: none;
+            color: #4a4a4af5;
+            padding-bottom: 100px;
         }
     }
 

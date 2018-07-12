@@ -74,3 +74,21 @@ function switchProductImage(index){
     document.getElementById("product-big-image").src = imgSrc;
     currentProductImageIndex = index;
 }
+
+function showProductSection(section){
+    if(section == "product-specification"){
+        document.getElementById("customer-reviews").style.display = 'none';
+        document.getElementById("product-specification").style.display = 'block';
+        document.getElementById("line-2").style.display = 'none';
+        document.getElementById("line-1").style.display = 'block';
+        
+        document.getElementsByClassName("btn-show-more").item(0).style.display = 'none';
+    }
+    else{
+        document.getElementById("customer-reviews").style.display = 'block';
+        document.getElementById("product-specification").style.display = 'none';
+        document.getElementsByClassName("btn-show-more").item(0).style.display = 'block';
+        document.getElementById("line-2").style.display = 'block';
+        document.getElementById("line-1").style.display = 'none';
+    }
+}
