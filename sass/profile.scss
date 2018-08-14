@@ -394,6 +394,9 @@ body{
 
 
 @media screen and (max-width: 1350px){
+  .font-size-small{
+     font-size: 11px;
+  }
 
   .profile-box{
 
@@ -414,10 +417,6 @@ body{
 }
 
 @media screen and (max-width: 1280px){
-  .font-size-small{
-    font-size: 11px;
-  }
-
   .right-side{
     // background: bisque;
     padding-left: 0px;

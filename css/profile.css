@@ -272,6 +272,9 @@ body {
   outline: none; }
 
 @media screen and (max-width: 1350px) {
+  .font-size-small {
+    font-size: 11px; }
+
   .profile-box .profile-action .profile-action-icon {
     width: 18px;
     height: 18px;
@@ -279,9 +282,6 @@ body {
   .profile-box .profile-action .profile-action-button {
     font-size: 14px; } }
 @media screen and (max-width: 1280px) {
-  .font-size-small {
-    font-size: 11px; }
-
   .right-side {
     padding-left: 0px; }
     .right-side .big-text {
