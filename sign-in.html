@@ -12,11 +12,11 @@
 </head>
 <body>
   <div class="container-fluid">
-    <div class="col-sm-12 big-text">SAFER</div>
+    <div class="col-sm-12 big-text" onclick="goToSection('/index.html')">SAFER</div>
     <div class="row col-sm-12">
       <div class="sign-up-box sign-in-box height-850">
         <div class="box-nav">
-            <button type="button" onclick="" class="left-nav-item background-white">New Customer</button>
+            <button type="button" onclick="goToSection('/sign-up.html')" class="left-nav-item background-white">New Customer</button>
             <button type="button" onclick="" class="right-nav-item background-black">Returning Customer</button>
         </div>
         <div id="section-sign-in display-block">
@@ -34,7 +34,7 @@
               <input type="checkbox" name="" value=""><span>I’m not a Robot</span><br>
             </div>
             <button type="button" onclick="" class="col-sm-12 sign-in-button">Sign in</button>
-            <div class="col-sm-6 col-sm-offset-3 text-create-account">New to SAFER?  <button type="button" onclick="" class="color-blue">Create an account</button><br><button type="button" onclick="" class="color-blue">Forgot Password</button></div>
+            <div class="col-sm-6 col-sm-offset-3 text-create-account">New to SAFER?  <button type="button" onclick="goToSection('/sign-up.html')" class="color-blue">Create an account</button><br><button type="button" onclick="" class="color-blue">Forgot Password</button></div>
             <!-- <div class="row col-sm-12 col-sm-offset-0 line-text-group">
               <div class="col-xs-5 line"></div>
               <div class="col-xs-2 text">OR</div>

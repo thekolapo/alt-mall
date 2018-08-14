@@ -269,6 +269,8 @@ body{
       background: transparent;
       border: none;
       margin-bottom: 30px;
+      margin-top: 30px;
+      // text-align: center;
     }
 
     .top-section{
@@ -411,6 +413,22 @@ body{
 
 }
 
+@media screen and (max-width: 1280px){
+  .font-size-small{
+    font-size: 11px;
+  }
+
+  .right-side{
+    // background: bisque;
+    padding-left: 0px;
+  
+    .big-text{
+      font-size: 19px;
+     
+    }
+  }
+}
+
 
 @media screen and (max-width: 1180px){
 
@@ -422,6 +440,21 @@ body{
       }
   
     }
+  }
+
+}
+
+
+@media screen and (max-width: 767px){
+  .right-side{
+    .order-history-box{
+      height: 480px;
+       margin-top: 60px;
+     }
+   
+     .height-much{
+       height: 800px;
+     }
   }
 
 }

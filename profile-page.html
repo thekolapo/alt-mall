@@ -13,16 +13,16 @@
 </head>
 <body>
   <div id="mySidenav" class="sidenav hidden-md hidden-lg">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-          <a href="#">Home & Office</a>
-          <a href="#">Fashion</a>
-          <a href="#">Gadgets & Computing</a>
-          <a href="#">Electronics</a>
-          <a href="#">Baby & Child</a>
-          <a href="#">Beauty & Healthcare</a>
-          <a href="#">Gaming</a>
-          <a href="#">Groceries</a>
-          <a href="#">Books</a>
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#" onclick="gotoProductListPage()">Home & Office</a>
+    <a href="#" onclick="gotoProductListPage()">Fashion</a>
+    <a href="#" onclick="gotoProductListPage()">Gadgets & Computing</a>
+    <a href="#" onclick="gotoProductListPage()">Electronics</a>
+    <a href="#" onclick="gotoProductListPage()">Baby & Child</a>
+    <a href="#" onclick="gotoProductListPage()">Beauty & Healthcare</a>
+    <a href="#" onclick="gotoProductListPage()">Gaming</a>
+    <a href="#" onclick="gotoProductListPage()">Groceries</a>
+    <a href="#" onclick="gotoProductListPage()">Books</a>
   </div>
 
   <div id="cart-slide">
@@ -94,7 +94,7 @@
     <div class="cart-footer">
         <div class="col-xs-12 total-cost">Total: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; NGN10,000</div>
         <div class="col-xs-10 col-xs-offset-1 button-display-cart">Display cart</div>
-        <div class="col-xs-12 button-checkout">Checkout</div>
+        <div class="col-xs-12 button-checkout" onclick="goToSection('/checkout-address.html')">Checkout</div>
     </div>  
   </div>
 
@@ -110,16 +110,16 @@
                   <div id="bar2"></div>
                   <div id="bar3"></div>
                 </div>
-                <div class="col-sm-1 col-xs-2 nav-top-text-test">SAFER.</div>
+                <div class="col-sm-1 col-xs-2 nav-top-text-test" onclick="goToSection('/index.html')">SAFER.</div>
                 <!-- <div class="col-sm-1 hidden-sm hidden-xs nav-top-text-test small-font">Products</div> -->
-                <button type="button" onclick="switchBetweenProductsAndVendors('0')" class="col-sm-1 hidden-sm hidden-xs nav-top-text-test small-font nav-button">Products</button>
+                <button type="button" onclick="switchBetweenProductsAndVendors('0')" class="col-sm-1 hidden-sm hidden-xs nav-top-text-test small-font nav-button">PRODUCTS</button>
                 <!-- <div class="col-sm-1 hidden-sm  hidden-xs nav-top-text-test small-font">Vendors</div> -->
-                <button type="button" onclick="switchBetweenProductsAndVendors('1')" class="col-sm-1 hidden-sm hidden-xs nav-top-text-test small-font nav-button background-none">Vendors</button>
+                <button type="button" onclick="switchBetweenProductsAndVendors('1')" class="col-sm-1 hidden-sm hidden-xs nav-top-text-test small-font nav-button background-none">BRANDS</button>
                 <div class="col-sm-6 col-sm-offset-1 col-md-7 col-md-offset-0  hidden-xs">
                     <input type="text" placeholder="Search for items, brands and inspiration" class="search-bar">
                 </div>
                 <div class="col-sm-3 col-md-2 col-xs-7 col-xs-offset-1 col-sm-offset-0 nav-icons">
-                  <img src="img/avatar.png" alt="profile-image" class="nav-icon">
+                  <img src="img/avatar.png" alt="profile-image" class="nav-icon" onclick="goToSection('/profile-page.html')">
                   <img src="img/favorite.png" alt="like-image" class="nav-icon">
                   <img src="img/cart.png" alt="cart-image" class="nav-icon" onclick="showCart()">
                 </div>
@@ -170,7 +170,7 @@
               <div class="profile-actions-group">
                   <div class="col-xs-11 col-xs-offset-1 profile-action">
                       <img src="img/delete-button.svg" alt="Avatar" class="profile-action-icon">
-                      <button type="button" onclick="" class="profile-action-button">Order history</button>
+                      <button type="button"onclick="goToSection('/profile-page-order-history.html')" class="profile-action-button">Order history</button>
                   </div>
                    <div class="col-xs-11 col-xs-offset-1 profile-action">
                       <img src="img/delete-button.svg" alt="Avatar" class="profile-action-icon">
@@ -190,7 +190,7 @@
                   </div>
               </div> 
               <div class="col-xs-12 divider margin-top-40"></div> 
-              <button type="button" onclick="" class="col-xs-4 col-xs-offset-4 col-md-6 col-md-offset-3 button-black">LOG OUT</button>
+              <button type="button" onclick="goToSection('/sign-in.html')" class="col-xs-4 col-xs-offset-4 col-md-6 col-md-offset-3 button-black">LOG OUT</button>
           </div>
         </div>
         <div class="col-sm-12 col-lg-8 right-side">

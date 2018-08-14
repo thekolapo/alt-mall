@@ -185,7 +185,8 @@ body {
       color: #808080;
       background: transparent;
       border: none;
-      margin-bottom: 30px; }
+      margin-bottom: 30px;
+      margin-top: 30px; }
     .right-side .order-history-box .top-section {
       font-size: 14px;
       text-align: center;
@@ -277,9 +278,23 @@ body {
     margin-bottom: 5px; }
   .profile-box .profile-action .profile-action-button {
     font-size: 14px; } }
+@media screen and (max-width: 1280px) {
+  .font-size-small {
+    font-size: 11px; }
+
+  .right-side {
+    padding-left: 0px; }
+    .right-side .big-text {
+      font-size: 19px; } }
 @media screen and (max-width: 1180px) {
   .profile-box .profile-action .profile-action-button {
     font-size: 17px; } }
+@media screen and (max-width: 767px) {
+  .right-side .order-history-box {
+    height: 480px;
+    margin-top: 60px; }
+  .right-side .height-much {
+    height: 800px; } }
 @media screen and (max-width: 720px) {
   .profile-box {
     width: 50%; } }

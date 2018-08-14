@@ -92,3 +92,7 @@ function showProductSection(section){
         document.getElementById("line-1").style.display = 'none';
     }
 }
+
+function goToSection(section){
+    window.location.href = section;
+}
