@@ -58,6 +58,17 @@ body {
   color: black;
   /* overflow: hidden; */ }
 
+.button-add-to-cart {
+  margin-top: 20px;
+  height: 38px;
+  background: transparent;
+  text-transform: uppercase;
+  border: solid 1.5px #00a100;
+  margin-bottom: 35px; }
+
+.huge-top-margin {
+  margin-top: 200px; }
+
 button:focus {
   outline: none; }
 
