@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAGQ,oCAAI;EACA,KAAK,EAAE,GAAG;AAGd,2CAAW;EACP,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;EACZ,SAAS,EAAE,IAAI;EACf,aAAa,EAAE,GAAG;EAClB,gBAAgB,EAAE,OAAO;EACzB,KAAK,EAAE,KAAK;EACZ,KAAK,EAAE,KAAK;AAGhB,+CAAe;EACX,OAAO,EAAE,YAAY;EACrB,KAAK,EAAE,GAAG",
+"sources": ["../sass/admin-vendors-payments.scss"],
+"names": [],
+"file": "admin-vendors-payments.css"
+}

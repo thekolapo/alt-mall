@@ -1,0 +1,92 @@
+@import "core/fonts";
+
+.box{
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: white;
+    box-shadow: 0 1px 3px 0 rgba(63, 63, 68, 0.15), 0 0 0 1px rgba(63, 63, 68, 0.05);
+    font-size: 14px;
+    margin-top: 25px;
+
+    .title-text{
+        font-weight: 200;
+        font-size: 16px;
+    }
+
+    .long-text{
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .font-size-14{
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+
+    .num-count{
+        font-weight: 500;
+        font-size: 28px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .thin-divider{
+        width: 100%;
+        height: 1px;
+        background: gray;
+        opacity: 0.4;
+        margin-bottom: 13px;
+    }
+
+    .stat{
+        margin-top: 12px;
+        margin-bottom: 12px;
+
+        .count{
+            text-align: right;
+            padding-right: 16px;
+        }
+    }
+
+    .btn-show-all{
+        color: #007ace;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        cursor: pointer;
+    }
+
+    button{
+        box-shadow: 0 1px 0 0 rgba(22, 29, 37, 0.05);
+        border: solid 1px #c4cdd5;
+        width: 154px;
+        height: 36px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        border-radius: 3px;
+    }
+}
+
+.box-45{
+    width: 49%;
+    float: left;
+}
+
+.float-right{
+    float: right;
+}
+
+.blue-text{
+    color: #007ace;
+}
+
+.padding-bottom-60{
+    padding-bottom: 60px;
+}
+
+.margin-bottom-100{
+    margin-bottom: 100px;
+}
+

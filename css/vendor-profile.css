@@ -1,0 +1,106 @@
+@font-face {
+  font-family: 'Graphik';
+  font-weight: normal;
+  src: url("/fonts/graphik/Graphik-Regular.eot");
+  /* IE9 Compat Modes */
+  src: url("/fonts/graphik/Graphik-Regular.eot?#iefix") format("embedded-opentype"), url("/fonts/graphik/Graphik-Regular.woff") format("woff"), url("/fonts/graphik/Graphik-Regular.ttf") format("truetype"), url("/fonts/graphik/Graphik-Regular.svg#Graphik-Regular") format("svg");
+  /* Legacy iOS */
+  text-rendering: optimizeLegibility; }
+@font-face {
+  font-family: 'Graphik';
+  font-weight: bold;
+  src: url("/fonts/graphik/Graphik-Medium.eot");
+  /* IE9 Compat Modes */
+  src: url("/fonts/graphik/Graphik-Medium.eot?#iefix") format("embedded-opentype"), url("/fonts/graphik/Graphik-Medium.woff") format("woff"), url("/fonts/graphik/Graphik-Medium.ttf") format("truetype"), url("/fonts/graphik/Graphik-Medium.svg#Graphik-Medium") format("svg");
+  /* Legacy iOS */
+  text-rendering: optimizeLegibility; }
+@font-face {
+  font-family: 'IBMPlexSans';
+  font-weight: normal;
+  src: url("/fonts/IBMPlexSans-Regular.ttf"); }
+@font-face {
+  font-family: 'IBMPlexSans';
+  font-weight: 100;
+  src: url("/fonts/IBMPlexSans-Regular.ttf"); }
+@font-face {
+  font-family: 'IBMPlexSans';
+  font-weight: Bold;
+  src: url("/fonts/IBMPlexSans-Bold.ttf"); }
+@font-face {
+  font-family: 'IBMPlexSans';
+  font-weight: 600;
+  src: url("/fonts/IBMPlexSans-Bold.ttf"); }
+@font-face {
+  font-family: 'IBMPlexSans';
+  font-weight: lighter;
+  src: url("/fonts/IBMPlexSans-Light.ttf"); }
+@font-face {
+  font-family: 'IBMPlexSans';
+  font-weight: medium;
+  src: url("/fonts/IBMPlexSans-Medium.ttf"); }
+@font-face {
+  font-family: 'IBMPlexSans';
+  font-weight: 200;
+  src: url("/fonts/IBMPlexSans-Medium.ttf"); }
+@font-face {
+  font-family: 'IBMPlexSans';
+  font-weight: 500;
+  src: url("/fonts/IBMPlexSans-SemiBold.ttf"); }
+@font-face {
+  font-family: 'Circular-Book';
+  src: url("/fonts/Circular/CircularStd-Book.ttf"); }
+@font-face {
+  font-family: 'SourceSansPro-SemiBold';
+  src: url("/fonts/SourceSansPro-SemiBold.ttf"); }
+.box {
+  width: 100%;
+  background: white;
+  padding-top: 30px;
+  box-shadow: 0 1px 3px 0 rgba(63, 63, 68, 0.15), 0 0 0 1px rgba(63, 63, 68, 0.05);
+  border-radius: 4px;
+  margin-top: 37px;
+  padding-bottom: 27px;
+  margin-bottom: 66px; }
+  .box .label {
+    font-size: 14px;
+    color: #212b36;
+    margin-bottom: 10px;
+    font-weight: normal;
+    padding-left: 0px;
+    text-align: left;
+    padding-left: 20px; }
+  .box .textfield {
+    height: 36px;
+    border: solid 1px #c4cdd5;
+    background-color: #ffffff;
+    width: 95%;
+    margin-bottom: 30px;
+    border-radius: 2px;
+    margin-left: 20px; }
+  .box .textfield-width-45 {
+    width: 46%; }
+  .box .blue-button {
+    cursor: pointer;
+    color: #007ace;
+    padding-left: 20px;
+    margin-bottom: 16px;
+    display: inline-block; }
+  .box .ht {
+    font-weight: 500;
+    font-size: 16px;
+    padding-left: 20px; }
+  .box .thin-divider {
+    width: 100%;
+    height: 1px;
+    background: gray;
+    opacity: 0.5;
+    margin-bottom: 35px;
+    margin-top: 15px; }
+
+.wrapper-label-textfield {
+  width: 50%;
+  float: left; }
+  .wrapper-label-textfield .textfield {
+    width: 90%; }
+
+/*# sourceMappingURL=vendor-profile.css.map */

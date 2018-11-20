@@ -96,3 +96,8 @@ function showProductSection(section){
 function goToSection(section){
     window.location.href = section;
 }
+
+function toggleSideNav(x){
+    $(x).siblings().toggle();
+}
+

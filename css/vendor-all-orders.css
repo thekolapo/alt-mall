@@ -1,0 +1,7 @@
+@media screen and (max-width: 480px) {
+  #table-section {
+    width: 300%;
+    overflow-x: scroll;
+    white-space: nowrap; } }
+
+/*# sourceMappingURL=vendor-all-orders.css.map */

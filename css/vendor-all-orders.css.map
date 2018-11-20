@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,oCAAoC;EAEhC,cAAc;IACV,KAAK,EAAE,IAAI;IACX,UAAU,EAAE,MAAM;IAClB,WAAW,EAAE,MAAM",
+"sources": ["../sass/vendor-all-orders.scss"],
+"names": [],
+"file": "vendor-all-orders.css"
+}

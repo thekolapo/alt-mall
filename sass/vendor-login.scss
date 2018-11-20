@@ -1,0 +1,205 @@
+@import "core/fonts";
+
+body{
+    font-family: 'IBMPlexSans';
+    background: rgba(128, 128, 128, 0.2);
+}
+
+.form-box{
+    width: 35%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-radius: 6px;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.1), -1px -1px 4px 0 rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    margin-top: 200px;
+}
+
+.header-text{
+      text-align: center; 
+      font-weight: 200; 
+      font-size: 28px;
+      color: #4d4d4d;
+      margin-bottom: 45px;
+}
+
+input{
+    outline: none;
+    font-size: 16px;
+    font-weight: 100; 
+    padding-left: 15px;
+    color: #474747;
+    border: none;
+}
+
+.double-text-field-view{
+    width: 70%;
+    border-radius: 3px;
+    // box-shadow: inset 0 1px 2px 0 rgba(102, 113, 123, 0.21), inset 0 0 0 1px rgba(102, 113, 123, 0.25);
+    border: solid 1.6px #353e44;
+    height: 48px;
+    margin: 0 auto;
+
+    .text-field-left{
+        height: 100%;
+        width: 50%;
+        float: left;
+        border: none;
+    }
+
+    .text-field-right{
+        height: 100%;
+        width: 50%;
+        float: right;
+        border: none;
+        border-left: solid 1.5px #353e44;
+        border-radius: 0px;
+    }
+
+}
+
+.text-field{
+    width: 70%;
+    border-radius: 3px;
+    border: solid 1.6px #353e44;
+    height: 48px;
+    margin: 0 auto;
+    margin-top: 24px;
+
+    input{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.button-forgot-password{
+    margin-right: 15%;
+    float: right;
+    text-align: right;
+    padding-right: 0px;
+    background: transparent;
+    border: none;
+    margin-top: 5px;
+    text-decoration: underline;
+    color: #353e44;
+}
+
+a{
+    text-decoration: underline;
+    color: #353e44; 
+}
+
+a:hover{
+    color: #353e44;
+}
+
+.button-login{
+    width: 30%;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 60px;
+
+    button{
+        width: 100%;
+        height: 100%;
+        background-color: #18a95e;
+        // box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.15);
+        color: white;
+        transition: 0.5s;
+        border: none;
+    }
+
+    button:hover{
+        box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.15);
+        transition: 0.5s;
+    }
+}
+
+.text-sign-up{
+    text-align: center;
+    margin-top: 25px;
+    color: #353e44;
+}
+
+@media screen and (max-width: 1400px){
+
+    .form-box{
+        width: 40%;
+        // display: none;
+    }
+
+}
+
+@media screen and (max-width: 1280px){
+
+    .form-box{
+        width: 45%;
+    }
+
+}
+
+@media screen and (max-width: 1024px){
+
+    .form-box{
+        width: 60%;
+    }
+
+}
+
+@media screen and (max-width: 720px){
+
+    .form-box{
+        width: 80%;
+    }
+
+}
+
+@media screen and (max-width: 480px){
+
+    .form-box{
+        width: 90%;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    .header-text{
+        font-size: 20px;
+    }
+
+    .double-text-field-view{
+        width: 85%;
+    }
+
+    .text-field{
+        width: 85%;
+    }
+
+    .button-login{
+        width: 45%;
+    }
+
+    .button-forgot-password{
+        margin-right: 8%;
+    }
+
+}
+
+@media screen and (max-width: 360px){
+    .form-box{
+        width: 92%;
+    }
+
+    .double-text-field-view, .text-field{
+        width: 90%;
+    }
+
+    .button-login{
+        width: 55%;
+    }
+
+    input{
+        font-size: 14px;
+    }
+
+}

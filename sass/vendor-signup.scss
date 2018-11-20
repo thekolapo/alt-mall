@@ -1,0 +1,115 @@
+@import "core/fonts";
+
+body{
+    font-family: 'IBMPlexSans';
+    background: rgba(128, 128, 128, 0.2);
+}
+
+.form-box{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 40%;
+}
+
+.dropdown {
+    margin-top: 24px;
+    font-size: 15px;
+}
+
+input{
+    font-size: 15px; 
+}
+
+@media screen and (max-width: 1440px){
+
+    .form-box{
+        width: 50%;
+        // display: none;
+    }
+
+}
+
+@media screen and (max-width: 1280px){
+
+    .form-box{
+        width: 55%;
+    }
+
+}
+
+@media screen and (max-width: 1024px){
+
+    .form-box{
+        width: 60%;
+    }
+
+}
+
+@media screen and (max-width: 720px){
+
+    .form-box{
+        width: 80%;
+    }
+
+}
+
+@media screen and (max-width: 480px){
+
+    .form-box{
+        width: 90%;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    .header-text{
+        font-size: 20px;
+    }
+
+    .double-text-field-view{
+        width: 85%;
+    }
+
+    .text-field{
+        width: 85%;
+    }
+
+    .button-veriy{
+        width: 45%;
+    }
+
+    .button-forgot-password{
+        margin-right: 8%;
+    }
+
+    .dropdown {
+        width: 85%;
+    }
+
+    .text-small{
+        font-size: 11px;
+    }
+
+}
+
+@media screen and (max-width: 360px){
+    .form-box{
+        width: 92%;
+    }
+
+    .double-text-field-view, .text-field{
+        width: 90%;
+    }
+
+    .button-veriy{
+        width: 55%;
+    }
+
+    input{
+        font-size: 14px;
+    }
+
+    .dropdown {
+        width: 90%;
+    }
+
+}
