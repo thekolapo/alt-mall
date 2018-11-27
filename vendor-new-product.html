@@ -1,69 +1,81 @@
 <!doctype html>
 <html>
-<head>
-  <meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-  <title>Alt Mall</title>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/style.css">  
-  <link rel="stylesheet" type="text/css" href="css/vendor-general.css"> 
-  <link rel="stylesheet" type="text/css" href="css/vendor-new-product.css">   
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script>$(function () { $('#side-nav').load('partials/vendor-sidenav.html');});</script>
-  <script>$(function () { $('#nav').load('partials/vendor-nav.html');});</script>
-</head>
-<body>
-  <div id="nav">
-    
-  </div>
-  <div class="main">
-    <div id="side-nav">
-        <div>
-            <a href="" class="nav-item"><i class="far fa-home"></i>Home</a>
-          </div>
-          <div>
-            <span class="nav-item" onclick="toggleSideNav(this)"><i class="far fa-home"></i>Orders</span>
-            <div class="sub-category">
-              <a href="/vendor-all-orders.html" class="nav-item"><i class="far fa-tag"></i>All Orders</a>
-              <br>
-              <a href="" class="nav-item"><i class="far fa-tag"></i>Drafts</a>
-            </div>
-          </div>
-          <div>
-            <span class="nav-item" onclick="toggleSideNav(this)"><i class="far fa-tag"></i>Products</span>
-            <div class="sub-category">
-              <a href="/vendor-all-products.html" class="nav-item"><i class="far fa-tag"></i>All products</a> <br>
-              <a href="/vendor-new-product.html" class="nav-item"><i class="far fa-tag"></i>New Product</a> <br>
-              <!-- <a href="" class="nav-item"><i class="far fa-tag"></i>Inventory</a> <br>
-              <a href="" class="nav-item"><i class="far fa-tag"></i>Collections</a> -->
-            </div>
-          </div>
-          <div><a href="" class="nav-item"><i class="far fa-user"></i>Cutomers</a></div>
-          <div>
-            <span class="nav-item" onclick="toggleSideNav(this)"><i class="fal fa-signal-alt"></i>Account Summary</span> 
-            <div class="sub-category">
-              <a href="/vendor-account-summary-report.html" class="nav-item"><i class="far fa-tag"></i>Report</a> <br>
-              <a href="/account-summary-invoice.html" class="nav-item"><i class="far fa-tag"></i>Invoice</a> <br>
-              <!-- <a href="" class="nav-item"><i class="far fa-tag"></i>Payment</a> -->
-            </div>
-          </div>
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Alt Mall</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+      crossorigin="anonymous">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/vendor-general.css">
+    <link rel="stylesheet" type="text/css" href="css/vendor-new-product.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+      $(function () {
+        $('#side-nav').load('partials/vendor-sidenav.html');
+      });
+    </script>
+    <script>
+      $(function () {
+        $('#nav').load('partials/vendor-nav.html');
+      });
+    </script>
+  </head>
+
+  <body>
+    <div id="nav">
+
     </div>
-    <div id="main-content">
-      <div class="header-text">New Product</div>
-      <div class="import-export-section">
+    <div class="main">
+      <div id="side-nav">
+        <div>
+          <a href="" class="nav-item"><i class="far fa-home"></i>Home</a>
+        </div>
+        <div>
+          <span class="nav-item" onclick="toggleSideNav(this)"><i class="far fa-home"></i>Orders</span>
+          <div class="sub-category">
+            <a href="/vendor-all-orders.html" class="nav-item"><i class="far fa-tag"></i>All Orders</a>
+            <br>
+            <a href="" class="nav-item"><i class="far fa-tag"></i>Drafts</a>
+          </div>
+        </div>
+        <div>
+          <span class="nav-item" onclick="toggleSideNav(this)"><i class="far fa-tag"></i>Products</span>
+          <div class="sub-category">
+            <a href="/vendor-all-products.html" class="nav-item"><i class="far fa-tag"></i>All products</a> <br>
+            <a href="/vendor-new-product.html" class="nav-item"><i class="far fa-tag"></i>New Product</a> <br>
+            <!-- <a href="" class="nav-item"><i class="far fa-tag"></i>Inventory</a> <br>
+              <a href="" class="nav-item"><i class="far fa-tag"></i>Collections</a> -->
+          </div>
+        </div>
+        <div><a href="" class="nav-item"><i class="far fa-user"></i>Cutomers</a></div>
+        <div>
+          <span class="nav-item" onclick="toggleSideNav(this)"><i class="fal fa-signal-alt"></i>Account Summary</span>
+          <div class="sub-category">
+            <a href="/vendor-account-summary-report.html" class="nav-item"><i class="far fa-tag"></i>Report</a> <br>
+            <a href="/account-summary-invoice.html" class="nav-item"><i class="far fa-tag"></i>Invoice</a> <br>
+            <!-- <a href="" class="nav-item"><i class="far fa-tag"></i>Payment</a> -->
+          </div>
+        </div>
+      </div>
+      <div id="main-content">
+        <div class="header-text">New Product</div>
+        <div class="import-export-section">
           <div class="left-side">
-              <span class="action-button"><i class="fas fa-arrow-down"></i>Import</span>
-              <span class="action-button"><i class="fas fa-arrow-up"></i>Export</span>
+            <span class="action-button"><i class="fas fa-arrow-down"></i>Import</span>
+            <span class="action-button"><i class="fas fa-arrow-up"></i>Export</span>
           </div>
           <div class="right-side">
             <button id="button-bulk-upload">Discard</button>
             <button id="button-add-product">Save</button>
           </div>
+        </div>
+        <div class="row"></div>
       </div>
-      <div class="row"></div>
     </div>
-  </div>
-  <script src="js/main.js"></script>
-</body>
+    <script src="js/main.js"></script>
+  </body>
+
 </html>

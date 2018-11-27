@@ -1,57 +1,68 @@
 <!doctype html>
 <html>
-<head>
-  <meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-  <title>Alt Mall</title>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/style.css">  
-  <link rel="stylesheet" type="text/css" href="css/vendor-general.css">  
-  <link rel="stylesheet" type="text/css" href="css/vendor-profile.css">  
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script>$(function () { $('#side-nav').load('partials/vendor-sidenav.html');});</script>
-  <script>$(function () { $('#nav').load('partials/vendor-nav.html');});</script>
-</head>
-<body>
-  <div id="nav">
-    
-  </div>
-  <div class="main">
-    <div id="side-nav">
-        <div>
-            <a href="" class="nav-item"><i class="far fa-home"></i>Home</a>
-          </div>
-          <div>
-            <span class="nav-item" onclick="toggleSideNav(this)"><i class="far fa-home"></i>Orders</span>
-            <div class="sub-category">
-              <a href="/vendor-all-orders.html" class="nav-item"><i class="far fa-tag"></i>All Orders</a>
-              <br>
-              <a href="" class="nav-item"><i class="far fa-tag"></i>Drafts</a>
-            </div>
-          </div>
-          <div>
-            <span class="nav-item" onclick="toggleSideNav(this)"><i class="far fa-tag"></i>Products</span>
-            <div class="sub-category">
-              <a href="/vendor-all-products.html" class="nav-item"><i class="far fa-tag"></i>All products</a> <br>
-              <a href="/vendor-new-product.html" class="nav-item"><i class="far fa-tag"></i>New Product</a> <br>
-              <!-- <a href="" class="nav-item"><i class="far fa-tag"></i>Inventory</a> <br>
-              <a href="" class="nav-item"><i class="far fa-tag"></i>Collections</a> -->
-            </div>
-          </div>
-          <div><a href="" class="nav-item"><i class="far fa-user"></i>Cutomers</a></div>
-          <div>
-            <span class="nav-item" onclick="toggleSideNav(this)"><i class="fal fa-signal-alt"></i>Account Summary</span> 
-            <div class="sub-category">
-              <a href="/vendor-account-summary-report.html" class="nav-item"><i class="far fa-tag"></i>Report</a> <br>
-              <a href="/account-summary-invoice.html" class="nav-item"><i class="far fa-tag"></i>Invoice</a> <br>
-              <!-- <a href="" class="nav-item"><i class="far fa-tag"></i>Payment</a> -->
-            </div>
-          </div>
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Alt Mall</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+      crossorigin="anonymous">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/vendor-general.css">
+    <link rel="stylesheet" type="text/css" href="css/vendor-profile.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+      $(function () {
+        $('#side-nav').load('partials/vendor-sidenav.html');
+      });
+    </script>
+    <script>
+      $(function () {
+        $('#nav').load('partials/vendor-nav.html');
+      });
+    </script>
+  </head>
+
+  <body>
+    <div id="nav">
+
     </div>
-  
-    <div id="main-content">
-      <div class="import-export-section">
+    <div class="main">
+      <div id="side-nav">
+        <div>
+          <a href="" class="nav-item"><i class="far fa-home"></i>Home</a>
+        </div>
+        <div>
+          <span class="nav-item" onclick="toggleSideNav(this)"><i class="far fa-home"></i>Orders</span>
+          <div class="sub-category">
+            <a href="/vendor-all-orders.html" class="nav-item"><i class="far fa-tag"></i>All Orders</a>
+            <br>
+            <a href="" class="nav-item"><i class="far fa-tag"></i>Drafts</a>
+          </div>
+        </div>
+        <div>
+          <span class="nav-item" onclick="toggleSideNav(this)"><i class="far fa-tag"></i>Products</span>
+          <div class="sub-category">
+            <a href="/vendor-all-products.html" class="nav-item"><i class="far fa-tag"></i>All products</a> <br>
+            <a href="/vendor-new-product.html" class="nav-item"><i class="far fa-tag"></i>New Product</a> <br>
+            <!-- <a href="" class="nav-item"><i class="far fa-tag"></i>Inventory</a> <br>
+              <a href="" class="nav-item"><i class="far fa-tag"></i>Collections</a> -->
+          </div>
+        </div>
+        <div><a href="" class="nav-item"><i class="far fa-user"></i>Cutomers</a></div>
+        <div>
+          <span class="nav-item" onclick="toggleSideNav(this)"><i class="fal fa-signal-alt"></i>Account Summary</span>
+          <div class="sub-category">
+            <a href="/vendor-account-summary-report.html" class="nav-item"><i class="far fa-tag"></i>Report</a> <br>
+            <a href="/account-summary-invoice.html" class="nav-item"><i class="far fa-tag"></i>Invoice</a> <br>
+            <!-- <a href="" class="nav-item"><i class="far fa-tag"></i>Payment</a> -->
+          </div>
+        </div>
+      </div>
+
+      <div id="main-content">
+        <div class="import-export-section">
           <div class="left-side">
             <div class="header-text">Profile</div>
           </div>
@@ -59,77 +70,78 @@
             <button id="button-bulk-upload">Log out</button>
             <button id="button-add-product">Save</button>
           </div>
+        </div>
+        <div class="row"></div>
+        <div class="box">
+          <div class="label col-sm-12">Profile name</div>
+          <input class="textfield textfield-width-45">
+          <div class="row"></div>
+          <div class="label col-sm-12">Store name</div>
+          <input class="textfield textfield-width-45">
+          <div class="row"></div>
+          <div class="label col-sm-12">Email</div>
+          <input class="textfield textfield-width-45">
+          <div class="row"></div>
+          <div class="label col-sm-12">Password</div>
+          <div class="row"></div>
+          <span class="blue-button">Change Password</span>
+        </div>
+        <div class="box">
+          <div class="ht">Store address</div>
+          <div class="thin-divider"></div>
+          <div class="label col-sm-12">Legal name of business</div>
+          <input class="textfield">
+          <div class="label col-sm-12">Phone</div>
+          <input class="textfield">
+          <div class="label col-sm-12">Street</div>
+          <input class="textfield">
+          <div class="label col-sm-12">Apt, suite, etc. (optional)</div>
+          <input class="textfield">
+          <div class="wrapper-label-textfield">
+            <div class="label col-sm-12">City</div>
+            <input class="textfield">
+          </div>
+          <div class="wrapper-label-textfield">
+            <div class="label col-sm-12">Postal / ZIP code</div>
+            <input class="textfield">
+          </div>
+          <div class="wrapper-label-textfield">
+            <div class="label col-sm-12">Country</div>
+            <input class="textfield">
+          </div>
+          <div class="wrapper-label-textfield">
+            <div class="label col-sm-12">Province</div>
+            <input class="textfield">
+          </div>
+          <div class="row"></div>
+        </div>
+        <div class="box">
+          <div class="ht">Standards and formats</div>
+          <div class="thin-divider"></div>
+          <div class="label col-sm-12">Timezone</div>
+          <input class="textfield">
+          <div class="wrapper-label-textfield">
+            <div class="label col-sm-12">Unit system</div>
+            <input class="textfield">
+          </div>
+          <div class="wrapper-label-textfield">
+            <div class="label col-sm-12">Default weight unit</div>
+            <input class="textfield">
+          </div>
+          <div class="label col-sm-12">Currency</div>
+          <input class="textfield">
+          <div class="row"></div>
+        </div>
+        <div class="box">
+          <div class="ht">Help</div>
+          <div class="thin-divider"></div>
+          <span class="blue-button">Contact Support</span>
+          <div class="row"></div>
+          <span class="blue-button">FAQ</span>
+        </div>
       </div>
-      <div class="row"></div>
-      <div class="box">
-        <div class="label col-sm-12">Profile name</div>
-        <input class="textfield textfield-width-45">
-        <div class="row"></div>
-        <div class="label col-sm-12">Store name</div>
-        <input class="textfield textfield-width-45">
-        <div class="row"></div>
-        <div class="label col-sm-12">Email</div>
-        <input class="textfield textfield-width-45">
-        <div class="row"></div>
-        <div class="label col-sm-12">Password</div>
-        <div class="row"></div>
-        <span class="blue-button">Change Password</span>
-      </div>
-      <div class="box">
-        <div class="ht">Store address</div>
-        <div class="thin-divider"></div>
-        <div class="label col-sm-12">Legal name of business</div>
-        <input class="textfield">
-        <div class="label col-sm-12">Phone</div>
-        <input class="textfield">
-        <div class="label col-sm-12">Street</div>
-        <input class="textfield">
-        <div class="label col-sm-12">Apt, suite, etc. (optional)</div>
-        <input class="textfield">
-        <div class="wrapper-label-textfield">
-          <div class="label col-sm-12">City</div>
-          <input class="textfield">
-        </div>
-        <div class="wrapper-label-textfield">
-          <div class="label col-sm-12">Postal / ZIP code</div>
-          <input class="textfield">
-        </div>
-        <div class="wrapper-label-textfield">
-          <div class="label col-sm-12">Country</div>
-          <input class="textfield">
-        </div>
-        <div class="wrapper-label-textfield">
-          <div class="label col-sm-12">Province</div>
-          <input class="textfield">
-        </div>
-        <div class="row"></div>
-      </div>
-      <div class="box">
-        <div class="ht">Standards and formats</div>
-        <div class="thin-divider"></div>
-        <div class="label col-sm-12">Timezone</div>
-        <input class="textfield">
-        <div class="wrapper-label-textfield">
-          <div class="label col-sm-12">Unit system</div>
-          <input class="textfield">
-        </div>
-        <div class="wrapper-label-textfield">
-          <div class="label col-sm-12">Default weight unit</div>
-          <input class="textfield">
-        </div>
-        <div class="label col-sm-12">Currency</div>
-        <input class="textfield">
-        <div class="row"></div>
-      </div>
-      <div class="box">
-        <div class="ht">Help</div>
-        <div class="thin-divider"></div>
-        <span class="blue-button">Contact Support</span>
-        <div class="row"></div>
-        <span class="blue-button">FAQ</span>
-        </div>
     </div>
-  </div>
-  <script src="js/main.js"></script>
-</body>
+    <script src="js/main.js"></script>
+  </body>
+
 </html>

@@ -1,38 +1,43 @@
 <!doctype html>
 <html>
-<head>
-  <meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-  <title>Alt Mall</title>
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/style.css">  
-  <!-- Custom Fonts -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-</head>
-<body>
-  <div id="overlay"></div>
-  <div id="landing" class="wrapper">
-    <div class="left-column">
-      <div class="left-column-top">
-        <div class="col-sm-1 col-xs-12 nav-top-text-test" onclick="goToSection('/index.html')">SAFER.</div>
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Alt Mall</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Custom Fonts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <div id="overlay"></div>
+    <div id="landing" class="wrapper">
+      <div class="left-column">
+        <div class="left-column-top">
+          <div class="col-sm-1 col-xs-12 nav-top-text-test" onclick="goToSection('/index.html')">SAFER.</div>
           <div class="left-column-small-text col-sm-12">shop now pay later</div>
           <div class="col-xs-7 col-sm-6 divider"></div>
-          <div class="left-column-small-text small-margin col-xs-12 col-sm-9">We offer you business as Amazon (/ˈæməˌzɒn/), is an American electronic commerce and cloud computing. has separate retail websites for the United States, the United Kingdom and Ireland, France, Canada, Germany, Italy, Spain, Netherlands, Australia, Brazil, Japan, China, India</div>
+          <div class="left-column-small-text small-margin col-xs-12 col-sm-9">We offer you business as Amazon
+            (/ˈæməˌzɒn/), is an American electronic commerce and cloud computing. has separate retail websites for the
+            United States, the United Kingdom and Ireland, France, Canada, Germany, Italy, Spain, Netherlands,
+            Australia, Brazil, Japan, China, India</div>
+        </div>
+        <!-- <div class="left-column-bottom zoom-small"></div> -->
+        <img src="img/apple-products.jpg" alt="product-image" class="left-column-bottom zoom-small" onclick="GotoMainSection()">
       </div>
-      <!-- <div class="left-column-bottom zoom-small"></div> -->
-      <img src="img/apple-products.jpg" alt="product-image" class="left-column-bottom zoom-small" onclick="GotoMainSection()">
-    </div>
-    <!-- <div class="right-column zoom-big hidden-md hidden-xs hidden-sm"></div>     -->
-    <img src="img/cam.jpg" alt="product-image" class="right-column zoom-big hidden-md hidden-xs hidden-sm" onclick="GotoMainSection()">
-    <!-- <div id ="arrow" onclick="GotoMainSection()"></div> -->
-    <div class="abs">
-        <img src="img/arrow.png" alt="arrow-next-page" id ="arrow" onclick="GotoMainSection()">
-    </div>
-  
-  </div>
+      <!-- <div class="right-column zoom-big hidden-md hidden-xs hidden-sm"></div>     -->
+      <img src="img/cam.jpg" alt="product-image" class="right-column zoom-big hidden-md hidden-xs hidden-sm" onclick="GotoMainSection()">
+      <!-- <div id ="arrow" onclick="GotoMainSection()"></div> -->
+      <div class="abs">
+        <img src="img/arrow.png" alt="arrow-next-page" id="arrow" onclick="GotoMainSection()">
+      </div>
 
-  <div id="main-section">
-    <div id="mySidenav" class="sidenav hidden-md hidden-lg">
+    </div>
+
+    <div id="main-section">
+      <div id="mySidenav" class="sidenav hidden-md hidden-lg">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="#" onclick="gotoProductListPage()">Home & Office</a>
         <a href="#" onclick="gotoProductListPage()">Fashion</a>
@@ -43,312 +48,320 @@
         <a href="#" onclick="gotoProductListPage()">Gaming</a>
         <a href="#" onclick="gotoProductListPage()">Groceries</a>
         <a href="#" onclick="gotoProductListPage()">Books</a>
-    </div>
-    <div id="cart-slide">
+      </div>
+      <div id="cart-slide">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="col-sm-12 text-cart">Cart</div>
-      <div class="products-wrapper">
-        <div class="col-sm-12 cart-item">
-          <!-- <div class="col-xs-3 item-image"></div> -->
-          <div class="row">
-            <div class="col-xs-4">
-              <img src="img/cam.jpg" alt="cart-item" class="item-image">
+        <div class="products-wrapper">
+          <div class="col-sm-12 cart-item">
+            <!-- <div class="col-xs-3 item-image"></div> -->
+            <div class="row">
+              <div class="col-xs-4">
+                <img src="img/cam.jpg" alt="cart-item" class="item-image">
+              </div>
+              <div class="col-xs-8">
+                <div class="col-sm-12 item-name">Camera</div>
+                <div class="col-sm-12 item-details">Price: N200,000<br>Brand: LG<br>Quantity: 1<br><br> <button type="button"
+                    onclick="" class="btn-remove">Remove</button></div>
+              </div>
             </div>
-            <div class="col-xs-8">
-              <div class="col-sm-12 item-name">Camera</div>
-              <div class="col-sm-12 item-details">Price: N200,000<br>Brand: LG<br>Quantity: 1<br><br> <button type="button" onclick="" class="btn-remove">Remove</button></div>
+          </div>
+          <div class="col-sm-12 cart-item">
+            <!-- <div class="col-xs-3 item-image"></div> -->
+            <div class="row">
+              <div class="col-xs-4">
+                <img src="img/cam.jpg" alt="cart-item" class="item-image">
+              </div>
+              <div class="col-xs-8">
+                <div class="col-sm-12 item-name">Camera</div>
+                <div class="col-sm-12 item-details">Price: N200,000<br>Brand: LG<br>Quantity: 1<br><br> <button type="button"
+                    onclick="" class="btn-remove">Remove</button></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 cart-item">
+            <!-- <div class="col-xs-3 item-image"></div> -->
+            <div class="row">
+              <div class="col-xs-4">
+                <img src="img/cam.jpg" alt="cart-item" class="item-image">
+              </div>
+              <div class="col-xs-8">
+                <div class="col-sm-12 item-name">Camera</div>
+                <!-- <div class="col-sm-12 item-details">Price: N200,000<br>Brand: LG<br>Quantity: 1<br><br><span class="btn-remove">Remove</span></div> -->
+                <div class="col-sm-12 item-details">Price: N200,000<br>Brand: LG<br>Quantity: 1<br><br> <button type="button"
+                    onclick="" class="btn-remove">Remove</button></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 cart-item">
+            <!-- <div class="col-xs-3 item-image"></div> -->
+            <div class="row">
+              <div class="col-xs-4">
+                <img src="img/cam.jpg" alt="cart-item" class="item-image">
+              </div>
+              <div class="col-xs-8">
+                <div class="col-sm-12 item-name">Camera</div>
+                <div class="col-sm-12 item-details">Price: N200,000<br>Brand: LG<br>Quantity: 1<br><br> <button type="button"
+                    onclick="" class="btn-remove">Remove</button></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 cart-item">
+            <!-- <div class="col-xs-3 item-image"></div> -->
+            <div class="row">
+              <div class="col-xs-4">
+                <img src="img/cam.jpg" alt="cart-item" class="item-image">
+              </div>
+              <div class="col-xs-8">
+                <div class="col-sm-12 item-name">Camera</div>
+                <div class="col-sm-12 item-details">Price: N200,000<br>Brand: LG<br>Quantity: 1<br><br><button type="button"
+                    onclick="" class="btn-remove">Remove</button></div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-sm-12 cart-item">
-            <!-- <div class="col-xs-3 item-image"></div> -->
-            <div class="row">
-              <div class="col-xs-4">
-                <img src="img/cam.jpg" alt="cart-item" class="item-image">
-              </div>
-              <div class="col-xs-8">
-                <div class="col-sm-12 item-name">Camera</div>
-                <div class="col-sm-12 item-details">Price: N200,000<br>Brand: LG<br>Quantity: 1<br><br> <button type="button" onclick="" class="btn-remove">Remove</button></div>
-              </div>
-            </div>
-        </div>
-        <div class="col-sm-12 cart-item">
-          <!-- <div class="col-xs-3 item-image"></div> -->
-          <div class="row">
-            <div class="col-xs-4">
-              <img src="img/cam.jpg" alt="cart-item" class="item-image">
-            </div>
-            <div class="col-xs-8">
-              <div class="col-sm-12 item-name">Camera</div>
-              <!-- <div class="col-sm-12 item-details">Price: N200,000<br>Brand: LG<br>Quantity: 1<br><br><span class="btn-remove">Remove</span></div> -->
-              <div class="col-sm-12 item-details">Price: N200,000<br>Brand: LG<br>Quantity: 1<br><br> <button type="button" onclick="" class="btn-remove">Remove</button></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-12 cart-item">
-            <!-- <div class="col-xs-3 item-image"></div> -->
-            <div class="row">
-              <div class="col-xs-4">
-                <img src="img/cam.jpg" alt="cart-item" class="item-image">
-              </div>
-              <div class="col-xs-8">
-                <div class="col-sm-12 item-name">Camera</div>
-                <div class="col-sm-12 item-details">Price: N200,000<br>Brand: LG<br>Quantity: 1<br><br> <button type="button" onclick="" class="btn-remove">Remove</button></div>
-              </div>
-            </div>
-        </div>
-        <div class="col-sm-12 cart-item">
-            <!-- <div class="col-xs-3 item-image"></div> -->
-            <div class="row">
-              <div class="col-xs-4">
-                <img src="img/cam.jpg" alt="cart-item" class="item-image">
-              </div>
-              <div class="col-xs-8">
-                <div class="col-sm-12 item-name">Camera</div>
-                <div class="col-sm-12 item-details">Price: N200,000<br>Brand: LG<br>Quantity: 1<br><br><button type="button" onclick="" class="btn-remove">Remove</button></div>
-              </div>
-            </div>
-        </div>
-      </div>
-      <div class="cart-footer">
+        <div class="cart-footer">
           <div class="col-xs-12 total-cost">Total: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; NGN10,000</div>
           <div class="col-xs-10 col-xs-offset-1 button-display-cart">Display cart</div>
           <div class="col-xs-12 button-checkout" onclick="goToSection('/checkout-address.html')">Checkout</div>
-      </div>
-      
-    </div>
-  
-    <div class="container-fluid">
-      <div class="row nav">
-        <div class="row">
-          <div class="col-sm-12 big-divider"></div>
-        </div>
-        <div class="nav-top-test">
-          <div class="col-lg-10 col-lg-offset-1">
-            <div class="col-xs-2 col-sm-1 menu-bar hidden-md hidden-lg" onclick="openNav()">
-              <div id="bar1"></div>
-              <div id="bar2"></div>
-              <div id="bar3"></div>
-            </div>
-            <div class="col-sm-1 col-xs-2 nav-top-text-test">SAFER.</div>
-            <!-- <div class="col-sm-1 hidden-sm hidden-xs nav-top-text-test small-font">Products</div> -->
-            <button type="button" onclick="switchBetweenProductsAndVendors('0')" class="col-sm-1 hidden-sm hidden-xs nav-top-text-test small-font nav-button">PRODUCTS</button>
-            <!-- <div class="col-sm-1 hidden-sm  hidden-xs nav-top-text-test small-font">Vendors</div> -->
-            <button type="button" onclick="switchBetweenProductsAndVendors('1')" class="col-sm-1 hidden-sm hidden-xs nav-top-text-test small-font nav-button background-none">BRANDS</button>
-            <div class="col-sm-6 col-sm-offset-1 col-md-7 col-md-offset-0  hidden-xs">
-                <input type="text" placeholder="Search for items, brands and inspiration" class="search-bar">
-            </div>
-            <div class="col-sm-3 col-md-2 col-xs-7 col-xs-offset-1 col-sm-offset-0 nav-icons">
-              <!-- <div class="col-xs-4 col-sm-4 hidden-lg hidden-md hidden-sm ic-search"></div> -->
-              <!-- <div class="col-xs-4 col-sm-4 ic-cart"></div> -->
-              <!-- <div class="col-xs-4 col-sm-4 ic-profile"></div> -->
-              <!-- <img src="img/avatar.png" alt="profile-image" class="col-xs-4 col-sm-4 nav-icon">
-              <img src="img/favorite.png" alt="like-image" class="col-xs-4 col-sm-4 nav-icon">
-              <img src="img/cart.png" alt="cart-image" class="col-xs-4 col-sm-4 nav-icon" onclick="showCart()"> -->
-              <!-- <div class="col-xs-2 hidden-lg hidden-md hidden-sm"></div> -->
-              <img src="img/avatar.png" alt="profile-image" class="nav-icon" onclick="goToSection('/profile-page.html')">
-              <img src="img/favorite.png" alt="like-image" class="nav-icon" onclick="goToSection('/saved-items.html')">
-              <img src="img/cart.png" alt="cart-image" class="nav-icon" onclick="showCart()">
-            </div>
-          </div>
         </div>
 
-        <div class="nav-bottom-search col-xs-12 hidden-lg hidden-md hidden-sm">
-            <input type="text" placeholder="Search for items, brands and inspiration" class="search-bar">
-        </div>
-  
-        <div class="nav-bottom-products hidden-xs hidden-sm">
-            <div class="wrapper-nav-bottom-text">
-                <span class="nav-bottom-text" onclick="gotoProductListPage()">Home & Office</span>
-                <span class="nav-bottom-text" onclick="gotoProductListPage()">Fashion</span>
-                <span class="nav-bottom-text" onclick="gotoProductListPage()">Gadgets & Computing</span>
-                <span class="nav-bottom-text" onclick="gotoProductListPage()">Electronics</span>
-                <span class="nav-bottom-text" onclick="gotoProductListPage()">Baby & Child</span>
-                <span class="nav-bottom-text" onclick="gotoProductListPage()">Beauty & Healthcare</span>
-                <span class="nav-bottom-text">Gaming</span>
-                <span class="nav-bottom-text">Groceries</span>
-                <span class="nav-bottom-text">Books</span>
-            </div>
-        </div>
-        <div class="nav-bottom-vendors hidden-xs hidden-sm">
-            <div class="wrapper-vendor-logos">
-                <img src="img/cam.jpg" alt="like-image" class="vendor-logo" onclick="gotoProductListPage()">
-                <img src="img/cam.jpg" alt="like-image" class="vendor-logo" onclick="gotoProductListPage()">
-                <img src="img/cam.jpg" alt="like-image" class="vendor-logo" onclick="gotoProductListPage()">
-                <img src="img/cam.jpg" alt="like-image" class="vendor-logo" onclick="gotoProductListPage()">
-                <img src="img/cam.jpg" alt="like-image" class="vendor-logo" onclick="gotoProductListPage()">
-                <img src="img/cam.jpg" alt="like-image" class="vendor-logo" onclick="gotoProductListPage()">
-            </div>
-        </div>
       </div>
-      <div class="row section-2">
-        <div class="col-md-8 col-md-offset-2">
-          <div class="col-lg-6 sample-product bottom-margin" onclick="gotoProductsPage()">
-            <!-- <div class="sample-product-img"></div><br> -->
-            <img src="img/cam.jpg" alt="cart-image" class="sample-product-img">
-            <div class="sample-product-text"><br>Ez Wash <br><br> <button type="button" onclick="" class="btn-transparent">Shop Electronics</button></div>
+
+      <div class="container-fluid">
+        <div class="row nav">
+          <div class="row">
+            <div class="col-sm-12 big-divider"></div>
           </div>
-          <div class="col-lg-6 sample-product" onclick="gotoProductsPage()">
+          <div class="nav-top-test">
+            <div class="col-lg-10 col-lg-offset-1">
+              <div class="col-xs-2 col-sm-1 menu-bar hidden-md hidden-lg" onclick="openNav()">
+                <div id="bar1"></div>
+                <div id="bar2"></div>
+                <div id="bar3"></div>
+              </div>
+              <div class="col-sm-1 col-xs-2 nav-top-text-test">SAFER.</div>
+              <!-- <div class="col-sm-1 hidden-sm hidden-xs nav-top-text-test small-font">Products</div> -->
+              <button type="button" onclick="switchBetweenProductsAndVendors('0')" class="col-sm-1 hidden-sm hidden-xs nav-top-text-test small-font nav-button">PRODUCTS</button>
+              <!-- <div class="col-sm-1 hidden-sm  hidden-xs nav-top-text-test small-font">Vendors</div> -->
+              <button type="button" onclick="switchBetweenProductsAndVendors('1')" class="col-sm-1 hidden-sm hidden-xs nav-top-text-test small-font nav-button background-none">BRANDS</button>
+              <div class="col-sm-6 col-sm-offset-1 col-md-7 col-md-offset-0  hidden-xs">
+                <input type="text" placeholder="Search for items, brands and inspiration" class="search-bar">
+              </div>
+              <div class="col-sm-3 col-md-2 col-xs-7 col-xs-offset-1 col-sm-offset-0 nav-icons">
+                <!-- <div class="col-xs-4 col-sm-4 hidden-lg hidden-md hidden-sm ic-search"></div> -->
+                <!-- <div class="col-xs-4 col-sm-4 ic-cart"></div> -->
+                <!-- <div class="col-xs-4 col-sm-4 ic-profile"></div> -->
+                <!-- <img src="img/avatar.png" alt="profile-image" class="col-xs-4 col-sm-4 nav-icon">
+              <img src="img/favorite.png" alt="like-image" class="col-xs-4 col-sm-4 nav-icon">
+              <img src="img/cart.png" alt="cart-image" class="col-xs-4 col-sm-4 nav-icon" onclick="showCart()"> -->
+                <!-- <div class="col-xs-2 hidden-lg hidden-md hidden-sm"></div> -->
+                <img src="img/avatar.png" alt="profile-image" class="nav-icon" onclick="goToSection('/profile-page.html')">
+                <img src="img/favorite.png" alt="like-image" class="nav-icon" onclick="goToSection('/saved-items.html')">
+                <img src="img/cart.png" alt="cart-image" class="nav-icon" onclick="showCart()">
+              </div>
+            </div>
+          </div>
+
+          <div class="nav-bottom-search col-xs-12 hidden-lg hidden-md hidden-sm">
+            <input type="text" placeholder="Search for items, brands and inspiration" class="search-bar">
+          </div>
+
+          <div class="nav-bottom-products hidden-xs hidden-sm">
+            <div class="wrapper-nav-bottom-text">
+              <span class="nav-bottom-text" onclick="gotoProductListPage()">Home & Office</span>
+              <span class="nav-bottom-text" onclick="gotoProductListPage()">Fashion</span>
+              <span class="nav-bottom-text" onclick="gotoProductListPage()">Gadgets & Computing</span>
+              <span class="nav-bottom-text" onclick="gotoProductListPage()">Electronics</span>
+              <span class="nav-bottom-text" onclick="gotoProductListPage()">Baby & Child</span>
+              <span class="nav-bottom-text" onclick="gotoProductListPage()">Beauty & Healthcare</span>
+              <span class="nav-bottom-text">Gaming</span>
+              <span class="nav-bottom-text">Groceries</span>
+              <span class="nav-bottom-text">Books</span>
+            </div>
+          </div>
+          <div class="nav-bottom-vendors hidden-xs hidden-sm">
+            <div class="wrapper-vendor-logos">
+              <img src="img/cam.jpg" alt="like-image" class="vendor-logo" onclick="gotoProductListPage()">
+              <img src="img/cam.jpg" alt="like-image" class="vendor-logo" onclick="gotoProductListPage()">
+              <img src="img/cam.jpg" alt="like-image" class="vendor-logo" onclick="gotoProductListPage()">
+              <img src="img/cam.jpg" alt="like-image" class="vendor-logo" onclick="gotoProductListPage()">
+              <img src="img/cam.jpg" alt="like-image" class="vendor-logo" onclick="gotoProductListPage()">
+              <img src="img/cam.jpg" alt="like-image" class="vendor-logo" onclick="gotoProductListPage()">
+            </div>
+          </div>
+        </div>
+        <div class="row section-2">
+          <div class="col-md-8 col-md-offset-2">
+            <div class="col-lg-6 sample-product bottom-margin" onclick="gotoProductsPage()">
+              <!-- <div class="sample-product-img"></div><br> -->
+              <img src="img/cam.jpg" alt="cart-image" class="sample-product-img">
+              <div class="sample-product-text"><br>Ez Wash <br><br> <button type="button" onclick="" class="btn-transparent">Shop
+                  Electronics</button></div>
+            </div>
+            <div class="col-lg-6 sample-product" onclick="gotoProductsPage()">
               <!-- <div class="sample-product-img"></div> -->
               <img src="img/cam.jpg" alt="cart-image" class="sample-product-img">
               <div class="sample-product-text"><br>
-                <div class="col-xs-12">Caffeine Haven</div><br><br> 
-                <button type="button" onclick="" class="btn-transparent">Shop Kitchen</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button type="button" onclick="" class="btn-transparent">Quick View</button>
+                <div class="col-xs-12">Caffeine Haven</div><br><br>
+                <button type="button" onclick="" class="btn-transparent">Shop Kitchen</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <button type="button" onclick="" class="btn-transparent">Quick View</button>
                 <!-- <div class="col-xs-6">Quick View</div> -->
                 <!-- <div class="col-xs-6">Shop Kitchen</div> -->
               </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="row deals-section">
-        <div class="col-sm-12 section-title">Today's Deals</div>
-        <div class="col-sm-8 col-sm-offset-2">
-          <div class="col-lg-3 col-md-6">
-            <div class="deal-item zoom" onclick="gotoProductsPage()">
+        <div class="row deals-section">
+          <div class="col-sm-12 section-title">Today's Deals</div>
+          <div class="col-sm-8 col-sm-offset-2">
+            <div class="col-lg-3 col-md-6">
+              <div class="deal-item zoom" onclick="gotoProductsPage()">
                 <!-- <div class="deal-item-img"></div> -->
                 <img src="img/cam.jpg" alt="product-image" class="deal-item-img">
                 <div class="col-xs-12 deal-item-price">$4000.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strike>$6000.00</strike></div>
                 <div class="col-xs-12 deal-item-end-date">Ends in 1:00:00</div>
-            </div>  
-          </div>
-          <div class="col-lg-3 col-md-6">
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
               <div class="deal-item zoom" onclick="gotoProductsPage()">
-                  <!-- <div class="deal-item-img"></div> -->
-                  <img src="img/cam.jpg" alt="product-image" class="deal-item-img">
-                  <div class="col-xs-12 deal-item-price">$4000.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strike>$6000.00</strike></div>
-                  <div class="col-xs-12 deal-item-end-date">Ends in 1:00:00</div>
-              </div>  
-          </div>
-          <div class="col-lg-3 col-md-6">
-              <div class="deal-item zoom" onclick="gotoProductsPage()">
-                  <!-- <div class="deal-item-img"></div> -->
+                <!-- <div class="deal-item-img"></div> -->
                 <img src="img/cam.jpg" alt="product-image" class="deal-item-img">
-                  <div class="col-xs-12 deal-item-price">$4000.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strike>$6000.00</strike></div>
-                  <div class="col-xs-12 deal-item-end-date">Ends in 1:00:00</div>
-              </div>  
-          </div>
-          <div class="col-lg-3 col-md-6">
+                <div class="col-xs-12 deal-item-price">$4000.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strike>$6000.00</strike></div>
+                <div class="col-xs-12 deal-item-end-date">Ends in 1:00:00</div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="deal-item zoom" onclick="gotoProductsPage()">
+                <!-- <div class="deal-item-img"></div> -->
+                <img src="img/cam.jpg" alt="product-image" class="deal-item-img">
+                <div class="col-xs-12 deal-item-price">$4000.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strike>$6000.00</strike></div>
+                <div class="col-xs-12 deal-item-end-date">Ends in 1:00:00</div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
               <div class="deal-item zoom">
-                  <!-- <div class="deal-item-img"></div> -->
-                  <img src="img/cam.jpg" alt="product-image" class="deal-item-img"> 
-                  <div class="col-xs-12 deal-item-price">$4000.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strike>$6000.00</strike></div>
-                  <div class="col-xs-12 deal-item-end-date">Ends in 1:00:00</div>
-              </div>  
-          </div>
-          <div class="col-sm-4 col-sm-offset-4">
-            <!-- <div class="btn-shop-all" onclick="">Shop all deals</div> -->
-            <button type="button" onclick="" class="btn-shop-all">Shop all deals</button>
-          </div>
-        </div>
-      </div>
-      <div class="row section-4">
-        <div class="col-sm-8 col-sm-offset-2">
-          <!-- <div class="apple"></div> -->
-          <img src="img/apple-products.jpg" alt="product-image" class="apple">
-        </div>
-      </div>
-      <div class="row section-5">
-        <div class="col-sm-12 section-title">Recommended</div>
-        <div class="col-sm-10 col-sm-offset-1">
-          <div class="col-lg-2 col-xs-6">
-            <div class="rec-product zoom">
-              <!-- <div class="rec-product-img"></div> -->
-              <img src="img/airpods.jpg" alt="product-image" class="rec-product-img">
-              <div class="rec-product-text">$157.99</div>
+                <!-- <div class="deal-item-img"></div> -->
+                <img src="img/cam.jpg" alt="product-image" class="deal-item-img">
+                <div class="col-xs-12 deal-item-price">$4000.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strike>$6000.00</strike></div>
+                <div class="col-xs-12 deal-item-end-date">Ends in 1:00:00</div>
+              </div>
+            </div>
+            <div class="col-sm-4 col-sm-offset-4">
+              <!-- <div class="btn-shop-all" onclick="">Shop all deals</div> -->
+              <button type="button" onclick="" class="btn-shop-all">Shop all deals</button>
             </div>
           </div>
-          <div class="col-lg-2 col-xs-6 zoom">
-              <div class="rec-product">
-                <!-- <div class="rec-product-img"></div> -->
-                <img src="img/airpods.jpg" alt="product-image" class="rec-product-img">
-                <div class="rec-product-text">$157.99</div>
-              </div>
-          </div>
-          <div class="col-lg-2 col-xs-6 zoom">
-              <div class="rec-product">
-                <!-- <div class="rec-product-img"></div> -->
-                <img src="img/airpods.jpg" alt="product-image" class="rec-product-img">
-                <div class="rec-product-text">$157.99</div>
-              </div>
-          </div>
-          <div class="col-lg-2 col-xs-6 zoom">
-              <div class="rec-product">
-                <!-- <div class="rec-product-img"></div> -->
-                <img src="img/airpods.jpg" alt="product-image" class="rec-product-img">
-                <div class="rec-product-text">$157.99</div>
-              </div>
-          </div>
-          <div class="col-lg-2 col-xs-6 zoom">
-              <div class="rec-product">
-                <!-- <div class="rec-product-img"></div> -->
-                <img src="img/airpods.jpg" alt="product-image" class="rec-product-img">
-                <div class="rec-product-text">$157.99</div>
-              </div>
-          </div>
-          <div class="col-lg-2 col-xs-6 zoom">
-              <div class="rec-product">
-                <!-- <div class="rec-product-img"></div> -->
-                <img src="img/airpods.jpg" alt="product-image" class="rec-product-img">
-                <div class="rec-product-text">$157.99</div>
-              </div>
+        </div>
+        <div class="row section-4">
+          <div class="col-sm-8 col-sm-offset-2">
+            <!-- <div class="apple"></div> -->
+            <img src="img/apple-products.jpg" alt="product-image" class="apple">
           </div>
         </div>
-      </div>
-      <div class="row section-6">
-        <div class="col-sm-8 col-sm-offset-2">
-          <div class="col-sm-5">
-            <!-- <div class="shop-deals"></div> -->
-            <img src="img/cam.jpg" alt="product-image" class="shop-deals">
-          </div>
-          <div class="col-sm-2 hidden-xs">
-            <div class="vert-divider"></div>
-          </div>
-          <div class="col-sm-5 hidden-xs">
-            <!-- <div class="shop-deals"></div> -->
-            <img src="img/cam.jpg" alt="product-image" class="shop-deals">
+        <div class="row section-5">
+          <div class="col-sm-12 section-title">Recommended</div>
+          <div class="col-sm-10 col-sm-offset-1">
+            <div class="col-lg-2 col-xs-6">
+              <div class="rec-product zoom">
+                <!-- <div class="rec-product-img"></div> -->
+                <img src="img/airpods.jpg" alt="product-image" class="rec-product-img">
+                <div class="rec-product-text">$157.99</div>
+              </div>
+            </div>
+            <div class="col-lg-2 col-xs-6 zoom">
+              <div class="rec-product">
+                <!-- <div class="rec-product-img"></div> -->
+                <img src="img/airpods.jpg" alt="product-image" class="rec-product-img">
+                <div class="rec-product-text">$157.99</div>
+              </div>
+            </div>
+            <div class="col-lg-2 col-xs-6 zoom">
+              <div class="rec-product">
+                <!-- <div class="rec-product-img"></div> -->
+                <img src="img/airpods.jpg" alt="product-image" class="rec-product-img">
+                <div class="rec-product-text">$157.99</div>
+              </div>
+            </div>
+            <div class="col-lg-2 col-xs-6 zoom">
+              <div class="rec-product">
+                <!-- <div class="rec-product-img"></div> -->
+                <img src="img/airpods.jpg" alt="product-image" class="rec-product-img">
+                <div class="rec-product-text">$157.99</div>
+              </div>
+            </div>
+            <div class="col-lg-2 col-xs-6 zoom">
+              <div class="rec-product">
+                <!-- <div class="rec-product-img"></div> -->
+                <img src="img/airpods.jpg" alt="product-image" class="rec-product-img">
+                <div class="rec-product-text">$157.99</div>
+              </div>
+            </div>
+            <div class="col-lg-2 col-xs-6 zoom">
+              <div class="rec-product">
+                <!-- <div class="rec-product-img"></div> -->
+                <img src="img/airpods.jpg" alt="product-image" class="rec-product-img">
+                <div class="rec-product-text">$157.99</div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="row">
+        <div class="row section-6">
+          <div class="col-sm-8 col-sm-offset-2">
+            <div class="col-sm-5">
+              <!-- <div class="shop-deals"></div> -->
+              <img src="img/cam.jpg" alt="product-image" class="shop-deals">
+            </div>
+            <div class="col-sm-2 hidden-xs">
+              <div class="vert-divider"></div>
+            </div>
+            <div class="col-sm-5 hidden-xs">
+              <!-- <div class="shop-deals"></div> -->
+              <img src="img/cam.jpg" alt="product-image" class="shop-deals">
+            </div>
+          </div>
+        </div>
+        <div class="row">
           <div class="col-sm-12 footer">
-              <div class="col-sm-10 col-sm-offset-1">
-                  <div class="row">
-                      <div class="col-xs-6 col-sm-3 footer-text-group">
-                          <div class="col-sm-12 footer-text">COMPANY</div>
-                          <div class="col-sm-12 footer-text">About us</div>
-                          <div class="col-sm-12 footer-text">Careers</div>
-                          <div class="col-sm-12 footer-text">Blog</div>
-                          <div class="col-sm-12 footer-text">Contact Us</div>
-                      </div>
-                      <div class="col-xs-6 col-sm-3 footer-text-group">
-                          <div class="col-sm-12 footer-text">COMPANY</div>
-                          <div class="col-sm-12 footer-text">About us</div>
-                          <div class="col-sm-12 footer-text">Careers</div>
-                          <div class="col-sm-12 footer-text">Blog</div>
-                          <div class="col-sm-12 footer-text">Contact Us</div>
-                      </div>
-                      <div class="col-xs-6 col-sm-3 footer-text-group">
-                          <div class="col-sm-12 footer-text">COMPANY</div>
-                          <div class="col-sm-12 footer-text">About us</div>
-                          <div class="col-sm-12 footer-text">Careers</div>
-                          <div class="col-sm-12 footer-text">Blog</div>
-                          <div class="col-sm-12 footer-text">Contact Us</div>
-                      </div>
-                      <div class="col-xs-6 col-sm-3 footer-text-group">
-                          <div class="col-sm-12 footer-text">COMPANY</div>
-                          <div class="col-sm-12 footer-text">About us</div>
-                          <div class="col-sm-12 footer-text">Careers</div>
-                          <div class="col-sm-12 footer-text">Blog</div>
-                          <div class="col-sm-12 footer-text">Contact Us</div>
-                      </div> 
-                  </div>
+            <div class="col-sm-10 col-sm-offset-1">
+              <div class="row">
+                <div class="col-xs-6 col-sm-3 footer-text-group">
+                  <div class="col-sm-12 footer-text">COMPANY</div>
+                  <div class="col-sm-12 footer-text">About us</div>
+                  <div class="col-sm-12 footer-text">Careers</div>
+                  <div class="col-sm-12 footer-text">Blog</div>
+                  <div class="col-sm-12 footer-text">Contact Us</div>
+                </div>
+                <div class="col-xs-6 col-sm-3 footer-text-group">
+                  <div class="col-sm-12 footer-text">COMPANY</div>
+                  <div class="col-sm-12 footer-text">About us</div>
+                  <div class="col-sm-12 footer-text">Careers</div>
+                  <div class="col-sm-12 footer-text">Blog</div>
+                  <div class="col-sm-12 footer-text">Contact Us</div>
+                </div>
+                <div class="col-xs-6 col-sm-3 footer-text-group">
+                  <div class="col-sm-12 footer-text">COMPANY</div>
+                  <div class="col-sm-12 footer-text">About us</div>
+                  <div class="col-sm-12 footer-text">Careers</div>
+                  <div class="col-sm-12 footer-text">Blog</div>
+                  <div class="col-sm-12 footer-text">Contact Us</div>
+                </div>
+                <div class="col-xs-6 col-sm-3 footer-text-group">
+                  <div class="col-sm-12 footer-text">COMPANY</div>
+                  <div class="col-sm-12 footer-text">About us</div>
+                  <div class="col-sm-12 footer-text">Careers</div>
+                  <div class="col-sm-12 footer-text">Blog</div>
+                  <div class="col-sm-12 footer-text">Contact Us</div>
+                </div>
               </div>
+            </div>
           </div>
         </div>
-      
+
+      </div>
     </div>
-  </div>
-  
-  <script src="js/main.js"></script>
-</body>
+
+    <script src="js/main.js"></script>
+  </body>
+
 </html>
